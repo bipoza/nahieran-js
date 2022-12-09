@@ -5,8 +5,7 @@
   "main": "node src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc --watch",
-    "start-doc": "http-server -p 3000 -o docs/index.html"
+    "start": "http-server -p 3000 -o docs/index.html"
   },
   "author": "bipoza",
   "license": "ISC",

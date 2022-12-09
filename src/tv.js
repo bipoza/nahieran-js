@@ -1,4 +1,4 @@
-import { TV_API_CATEGORIES, TV_API_CATEGORY, TV_API_CATEGORY_PROGRAM } from "./contants.js";
+import { TV_API_CATEGORIES, TV_API_CATEGORY, TV_API_CATEGORY_PROGRAM, TV_API_PROGRAMS } from "./contants.js";
 import { fetchAPI } from "./helpers/fetch.js";
 import { parseImage } from "./helpers/parsers.js"
 
@@ -80,8 +80,33 @@ const getTVCategoryPrograms = (category_id) => {
     });
 };
 
+const getTVPrograms = () =>{
+    return new Promise(async (resolve, reject) => {
+        try {
+            const data = await fetchAPI(TV_API_PROGRAMS);
+            const parsedData = {
+                count: data.num,
+                timestamp: data.timestamp,
+                programs: data.web_group.map(item => {
+                    return {
+                        id: item.ID_WEB_GROUP,
+                        name: item.NOMBRE_GROUP,
+                        order: item.ORDEN,
+                        description: item.SHORT_DESC,
+                        images: item.images ? item.images?.map((image) => parseImage(data.vod_url, image)) : [],
+                    }
+                }), 
+            };
+            resolve(parsedData);
+        } catch (err) {
+            reject(err);
+        }
+    });
+}
+
 export {
     getTVCategories,
     getTVCategory,
-    getTVCategoryPrograms
+    getTVCategoryPrograms,
+    getTVPrograms
 }

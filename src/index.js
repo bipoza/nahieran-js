@@ -1,7 +1,8 @@
-import { getTVCategories, getTVCategory, getTVCategoryPrograms } from "./tv.js"
+import { getTVCategories, getTVCategory, getTVCategoryPrograms, getTVPrograms } from "./tv.js"
 
 export {
     getTVCategories,
     getTVCategory,
-    getTVCategoryPrograms
+    getTVCategoryPrograms,
+    getTVPrograms
 }

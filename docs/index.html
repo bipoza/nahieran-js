@@ -17,10 +17,25 @@
 </head>
 
 <body class="bg-dark">
-    <div class="container">
-        <h1>nahieran-js</h1>
-        <img src="./logo.svg" />
+    <div class="container mb-5">
+        <img src="./logo.svg" alt="nahieran-js" class="mt-5"/>
 
+
+        <div class="card mt-5 p-2">
+            <div class="card-body">
+                <h2 class="text-primary">Get Programs</h2>
+                <code lang="javascript">import { getTVPrograms } from "nahieran-js";
+
+getTVPrograms().then(res => {
+    console.log("Response: ", res);
+}, err => {
+    console.error("Response error: ", err);
+});</code>
+                <br>
+                DEMO: <button type="button" class="btn btn-primary"
+                    onclick="getDocTVPrograms()">getTVPrograms()</button>
+            </div>
+        </div>
 
         <div class="card mt-5 p-2">
             <div class="card-body">
@@ -77,6 +92,8 @@ getTVCategoryPrograms(category_id).then(res => {
             </div>
         </div>
 
+
+
     </div>
 
 
@@ -100,7 +117,7 @@ getTVCategoryPrograms(category_id).then(res => {
 
 
 <script type="module">
-    import { getTVCategories, getTVCategory, getTVCategoryPrograms } from "../src/index.js";
+    import { getTVCategories, getTVCategory, getTVCategoryPrograms, getTVPrograms } from "../src/index.js";
     const myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
     const getDocTVCategories = () => {
         getTVCategories().then(res => {
@@ -133,10 +150,19 @@ getTVCategoryPrograms(category_id).then(res => {
             myModal.show();
         }, err => console.error("Response error: ", err));
     };
+
+    const getDocTVPrograms = () => {
+        getTVPrograms().then(res => {
+            console.log("Response: ", res);
+            document.getElementById("modalTitle").innerText = "Get TV Category Programs";
+            document.getElementById("modalBody").innerText = JSON.stringify(res, undefined, 4);
+            myModal.show();
+        }, err => console.error("Response error: ", err));
+    };
     window.getDocTVCategories = getDocTVCategories;
     window.getDocTVCategory = getDocTVCategory;
     window.getDocTVCategoryPrograms = getDocTVCategoryPrograms;
-
+    window.getDocTVPrograms = getDocTVPrograms;
 
 </script>
 

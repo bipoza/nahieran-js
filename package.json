@@ -1,7 +1,7 @@
 {
   "name": "nahieran-js",
   "version": "1.0.0",
-  "description": "Nahieran erabiltzeko beharrezko funtzioak",
+  "description": "A set of JS functions to use the Nahieran API",
   "main": "node src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

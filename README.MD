@@ -47,3 +47,11 @@ getTVCategory(category_slug).then(res => {
     console.error("Response error: ", err);
 });
 ````
+
+## Garapen ingurunea martxan jartzeko
+JS funtzioak testeatzeko docs karpetan HTML sinple bat dago.
+
+```bash
+npm i
+npm run start
+```

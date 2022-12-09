@@ -22,25 +22,32 @@
         <section>
             <h2>Get TV Categories</h2>
             <code lang="javascript">import { getTVCategories } from "nahieran-js";
-            getTVCategories().then(res => {
-                console.log("Response: ", res);
-            }, err => {
-                console.error("Response error: ", err);
-            });
-            </code>
+
+getTVCategories().then(res => {
+    console.log("Response: ", res);
+}, err => {
+    console.error("Response error: ", err);
+});</code>
 
             <br>
-            DEMO: <button type="button" class="btn btn-primary" onclick="getDocTVCategories()">Get TV
-                Categories</button>
+            DEMO: <button type="button" class="btn btn-primary"
+                onclick="getDocTVCategories()">GetTVCategories()</button>
         </section>
 
 
 
         <section>
             <h2>Get TV Category</h2>
+            <code lang="javascript">import { getTVCategory } from "nahieran-js";
 
+getTVCategory(category_slug).then(res => {
+    console.log("Response: ", res);
+}, err => {
+    console.error("Response error: ", err);
+});</code>
             <br>
-            DEMO: <button type="button" class="btn btn-primary" onclick="getDocTVCategory('PELICULAS')">Get TV Category</button>
+            DEMO: <button type="button" class="btn btn-primary"
+                onclick="getDocTVCategory('PELICULAS')">GetTVCategory('PELICULAS')</button>
         </section>
     </div>
 
@@ -70,7 +77,7 @@
         getTVCategories().then(res => {
             console.log("Response: ", res);
             document.getElementById("modalTitle").innerText = "Get TV Categories";
-            document.getElementById("modalBody").innerText = JSON.stringify(res);
+            document.getElementById("modalBody").innerText = JSON.stringify(res, undefined, 4);
             myModal.show();
         }, err => console.error("Response error: ", err));
     };
@@ -79,7 +86,7 @@
         getTVCategory(category_slug).then(res => {
             console.log("Response: ", res);
             document.getElementById("modalTitle").innerText = "Get TV Categories";
-            document.getElementById("modalBody").innerText = JSON.stringify(res);
+            document.getElementById("modalBody").innerText = JSON.stringify(res, undefined, 4);
             myModal.show();
         }, err => console.error("Response error: ", err));
     };

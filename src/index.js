@@ -58,7 +58,6 @@ const getTVCategory = (category_slug) => {
     })
 }
 
-// export default getTelesaiak;
 export {
     getTVCategories,
     getTVCategory

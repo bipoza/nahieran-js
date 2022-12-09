@@ -2,16 +2,15 @@
   "name": "nahieran-js",
   "version": "1.0.0",
   "description": "Nahieran erabiltzeko beharrezko funtzioak",
-  "main": "node dist/index.js",
+  "main": "node src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc --watch",
-    "start-dev": "http-server -p 3000"
+    "start-doc": "http-server -p 3000 -o docs/index.html"
   },
-  "author": "",
+  "author": "bipoza",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^14.1.1",
-    "typescript": "^4.9.4"
+    "http-server": "^14.1.1"
   }
 }

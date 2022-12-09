@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahieran-JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>NahieranJS</h1>
+        <section>
+            <h2>Get TV Categories</h2>
+            <code lang="javascript">import { getTVCategories } from "nahieran-js";
+            getTVCategories().then(res => {
+                console.log("Response: ", res);
+            }, err => {
+                console.error("Response error: ", err);
+            });
+            </code>
+
+            <br>
+            DEMO: <button type="button" class="btn btn-primary" onclick="getDocTVCategories()">Get TV
+                Categories</button>
+        </section>
+
+
+
+        <section>
+            <h2>Get TV Category</h2>
+
+            <br>
+            DEMO: <button type="button" class="btn btn-primary" onclick="getDocTVCategory('PELICULAS')">Get TV Category</button>
+        </section>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    ...
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script type="module">
+    import { getTVCategories, getTVCategory } from "../src/index.js";
+    const myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
+    const getDocTVCategories = () => {
+        getTVCategories().then(res => {
+            console.log("Response: ", res);
+            document.getElementById("modalTitle").innerText = "Get TV Categories";
+            document.getElementById("modalBody").innerText = JSON.stringify(res);
+            myModal.show();
+        }, err => console.error("Response error: ", err));
+    };
+
+    const getDocTVCategory = (category_slug) => {
+        getTVCategory(category_slug).then(res => {
+            console.log("Response: ", res);
+            document.getElementById("modalTitle").innerText = "Get TV Categories";
+            document.getElementById("modalBody").innerText = JSON.stringify(res);
+            myModal.show();
+        }, err => console.error("Response error: ", err));
+    };
+    window.getDocTVCategories = getDocTVCategories;
+    window.getDocTVCategory = getDocTVCategory;
+
+</script>
+
+</html>

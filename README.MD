@@ -4,6 +4,9 @@ Proiektu hau [@erral](https://github.com/erral)-en https://github.com/erral/eitb
 
 Proiektu honen helburua Nahieran-eko APIa erabiltzeko beharrezkoak diren Javascript funtzioak lortzea da.
 
+Dokumentazioa: https://bipoza.github.io/nahieran-js/docs/
+
+
 Adibideak:
 
 ````JS

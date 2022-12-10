@@ -207,6 +207,7 @@ const getTVPrograms = () => {
         timestamp: data.timestamp,
         programs: data.web_group.map((item) => {
           return {
+            '@id': build_tv_category_program_url(item),
             id: item.ID_WEB_GROUP,
             name: item.NOMBRE_GROUP,
             order: item.ORDEN,

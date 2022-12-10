@@ -1,17 +1,34 @@
 import {
-    getTVCategories,
-    getTVCategory,
-    getTVCategoryPrograms,
-    getTVCategoryProgramPlaylist,
-    getTVCategoryProgramPlaylistChapter,
-    getTVPrograms
-} from "./tv.js"
+  getTVCategories,
+  getTVCategory,
+  getTVCategoryPrograms,
+  getTVCategoryProgramPlaylist,
+  getTVCategoryProgramPlaylistChapter,
+  getTVPrograms,
+} from './tv.js';
+
+import {
+  getRadios,
+  getRadioPrograms,
+  getRadioProgramData,
+  getRadioProgramSeasons,
+  getRadioProgramSeason,
+  getRadioProgramSeasonChapter,
+} from './radio.js';
 
 export {
-    getTVCategories,
-    getTVCategory,
-    getTVCategoryPrograms,
-    getTVCategoryProgramPlaylist,
-    getTVCategoryProgramPlaylistChapter,
-    getTVPrograms
-}
+  // TV
+  getTVCategories,
+  getTVCategory,
+  getTVCategoryPrograms,
+  getTVCategoryProgramPlaylist,
+  getTVCategoryProgramPlaylistChapter,
+  getTVPrograms,
+  // Radio
+  getRadios,
+  getRadioPrograms,
+  getRadioProgramData,
+  getRadioProgramSeasons,
+  getRadioProgramSeason,
+  getRadioProgramSeasonChapter,
+};

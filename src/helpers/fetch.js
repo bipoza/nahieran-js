@@ -1,13 +1,10 @@
-
-import { TV_API_PATH } from "../contants.js";
-
-const fetchAPI = (param) => {
-    return new Promise((resolve, reject) => {
-        fetch(`${TV_API_PATH}${param}`)
-            .then((response) => response.json())
-            .then((data) => resolve(data)).catch(err => reject(err));
-    });
-
+const fetchAPI = (url) => {
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => resolve(data))
+      .catch((err) => reject(err));
+  });
 };
 
 export { fetchAPI };

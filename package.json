@@ -2,14 +2,29 @@
   "name": "nahieran-js",
   "version": "1.0.0",
   "description": "A set of JS functions to use the Nahieran API",
-  "main": "node src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -p 3000 -o docs"
-  },
   "author": "bipoza",
-  "license": "ISC",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "http-server -p 3000 -o docs",
+    "build": "npm run clean && rollup -c --bundleConfigAsCjs",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "rimraf": "^3.0.2",
+    "@rollup/plugin-commonjs": "^23.0.4",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "3.7.2",
+    "release-it": "^15.5.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -111,9 +111,22 @@ getTVCategoryProgramPlaylist(playlist_id).then(res => {
 
 
 
-        <video width="352" height="198" controls crossorigin="true">
-            <source src="https://vod.eitb.eus/1670684107_c8081146d40ca3566e3e1c86320ddb5c255cdbe8/vod/geozone1/2022/12/02/0011696943/0011696943_480x270_768000_58c0e0e5BnfYQOVbhvUs.m3u8" type="application/x-mpegURL">
-        </video>
+
+        <div class="card mt-5 p-2">
+            <div class="card-body">
+                <h2 class="text-primary">Get tv category program playlist chapter</h2>
+                <code lang="javascript">import { getTVCategoryProgramPlaylistChapter } from "nahieran-js";
+
+getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
+    console.log("Response: ", res);
+}, err => {
+    console.error("Response error: ", err);
+});</code>
+                <br>
+                DEMO: <input value="174848" id="getTVCategoryProgramPlaylistChapterParam" /> <button type="button"
+                    class="btn btn-primary" onclick="getDocTVCategoryProgramPlaylistChapter()">getTVCategoryProgramPlaylistChapter(174848)</button>
+            </div>
+        </div>
     </div>
 
 
@@ -142,7 +155,8 @@ getTVCategoryProgramPlaylist(playlist_id).then(res => {
         getTVCategory,
         getTVCategoryPrograms,
         getTVPrograms,
-        getTVCategoryProgramPlaylist
+        getTVCategoryProgramPlaylist,
+        getTVCategoryProgramPlaylistChapter
     } from "../src/index.js";
     
     const myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
@@ -184,7 +198,19 @@ getTVCategoryProgramPlaylist(playlist_id).then(res => {
 
         getTVCategoryProgramPlaylist(getTVCategoryProgramPlaylistParam).then(res => {
             console.log("Response: ", res);
-            document.getElementById("modalTitle").innerText = "Get TV Category Programs";
+            document.getElementById("modalTitle").innerText = "Get TV category program playlist";
+            document.getElementById("modalBody").innerText = JSON.stringify(res, undefined, 4);
+            myModal.show();
+        }, err => console.error("Response error: ", err));
+    };
+
+
+    const getDocTVCategoryProgramPlaylistChapter = () => {
+        const getTVCategoryProgramPlaylisChaptertParam = document.getElementById("getTVCategoryProgramPlaylistChapterParam").value;
+
+        getTVCategoryProgramPlaylistChapter(getTVCategoryProgramPlaylisChaptertParam).then(res => {
+            console.log("Response: ", res);
+            document.getElementById("modalTitle").innerText = "Get TV category program playlist chapter";
             document.getElementById("modalBody").innerText = JSON.stringify(res, undefined, 4);
             myModal.show();
         }, err => console.error("Response error: ", err));
@@ -203,6 +229,7 @@ getTVCategoryProgramPlaylist(playlist_id).then(res => {
     window.getDocTVCategory = getDocTVCategory;
     window.getDocTVCategoryPrograms = getDocTVCategoryPrograms;
     window.getDocTVCategoryProgramPlaylist = getDocTVCategoryProgramPlaylist;
+    window.getDocTVCategoryProgramPlaylistChapter = getDocTVCategoryProgramPlaylistChapter;
     window.getDocTVPrograms = getDocTVPrograms;
 
 </script>

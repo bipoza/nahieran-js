@@ -1,4 +1,5 @@
 import {
+  TV_API_PATH,
   TV_API_CATEGORIES,
   TV_API_CATEGORY,
   TV_API_CATEGORY_PROGRAM,
@@ -9,16 +10,16 @@ import {
 import { fetchAPI } from './helpers/fetch.js';
 import { parseImage } from './helpers/parsers.js';
 import {
-  build_tv_category_url,
-  build_tv_category_program_url,
-  build_tv_category_program_playlist_url,
   build_tv_category_program_playlist_program_url,
+  build_tv_category_program_playlist_url,
+  build_tv_category_program_url,
+  build_tv_category_url,
 } from './helpers/utils.js';
 
 const getTVCategories = () => {
   return new Promise(async (resolve, reject) => {
     try {
-      const data = await fetchAPI(TV_API_CATEGORIES);
+      const data = await fetchAPI(`${TV_API_PATH}${TV_API_CATEGORIES}`);
 
       const parsedData = {
         count: data.num,
@@ -45,7 +46,9 @@ const getTVCategories = () => {
 const getTVCategory = (category_slug) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const data = await fetchAPI(`${TV_API_CATEGORY}/${category_slug}/`);
+      const data = await fetchAPI(
+        `${TV_API_PATH}${TV_API_CATEGORY}/${category_slug}/`,
+      );
       const parsedData = {
         count: data.num,
         timestamp: data.timestamp,
@@ -72,7 +75,9 @@ const getTVCategory = (category_slug) => {
 const getTVCategoryPrograms = (category_id) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const data = await fetchAPI(`${TV_API_CATEGORY_PROGRAM}/${category_id}/`);
+      const data = await fetchAPI(
+        `${TV_API_PATH}${TV_API_CATEGORY_PROGRAM}/${category_id}/`,
+      );
       const parsedData = {
         count: data.num,
         timestamp: data.timestamp,
@@ -108,7 +113,7 @@ const getTVCategoryProgramPlaylist = (playlist_id) => {
   return new Promise(async (resolve, reject) => {
     try {
       const data = await fetchAPI(
-        `${TV_API_CATEGORY_PROGRAM_PLAYLIST}/${playlist_id}/`,
+        `${TV_API_PATH}${TV_API_CATEGORY_PROGRAM_PLAYLIST}/${playlist_id}/`,
       );
       const parsedData = {
         count: data.num,
@@ -146,7 +151,7 @@ const getTVCategoryProgramPlaylistChapter = (chapter_id) => {
   return new Promise(async (resolve, reject) => {
     try {
       const data = await fetchAPI(
-        `${TV_API_CATEGORY_PROGRAM_PLAYLIST_CHAPTER}/${chapter_id}/`,
+        `${TV_API_PATH}${TV_API_CATEGORY_PROGRAM_PLAYLIST_CHAPTER}/${chapter_id}/`,
       );
       const parsedData = {
         count: data.num,
@@ -201,7 +206,7 @@ const getTVCategoryProgramPlaylistChapter = (chapter_id) => {
 const getTVPrograms = () => {
   return new Promise(async (resolve, reject) => {
     try {
-      const data = await fetchAPI(TV_API_PROGRAMS);
+      const data = await fetchAPI(`${TV_API_PATH}${TV_API_PROGRAMS}`);
       const parsedData = {
         count: data.num,
         timestamp: data.timestamp,

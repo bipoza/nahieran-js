@@ -10,3 +10,31 @@ export const TV_API_CATEGORY_PROGRAM_PLAYLIST = '/Playlist2/MULTIWEBTV';
 export const TV_API_CATEGORY_PROGRAM_PLAYLIST_CHAPTER = '/Video4/MULTIWEBTV';
 
 export const TV_API_PROGRAMS = '/Grouplist/MULTIWEBTV/8/';
+
+export const RADIO_DOMAIN_PATH = 'https://api.eitb.eus';
+export const RADIO_API_PATH = `${RADIO_DOMAIN_PATH}/api`;
+export const RADIOS = [
+  {
+    name: 'Euskadi Irratia',
+    slug: 'euskadi_irratia',
+  },
+  {
+    name: 'Radio Euskadi',
+    slug: 'radio_euskadi',
+  },
+  {
+    name: 'Radio Vitoria',
+    slug: 'radio_vitoria',
+  },
+  {
+    name: 'Gaztea',
+    slug: 'gaztea',
+  },
+];
+
+export const RADIO_PROGRAMS = `${RADIO_API_PATH}/getPrograms`;
+export const RADIO_PROGRAM = `${RADIO_API_PATH}/getProgramData`;
+export const RADIO_PROGRAM_SEASONS = `${RADIO_API_PATH}/getSeasons`;
+export const RADIO_PROGRAM_SEASON = `${RADIO_API_PATH}/getSeasonData`;
+export const RADIO_PROGRAM_SEASON_CHAPTERS = `${RADIO_API_PATH}/getChapters`;
+export const RADIO_PROGRAM_SEASON_CHAPTER = `${RADIO_API_PATH}/getChapterData`;

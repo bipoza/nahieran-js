@@ -1,8 +1,6 @@
-import { TV_API_PATH } from '../constants.js';
-
-const fetchAPI = (param) => {
+const fetchAPI = (url) => {
   return new Promise((resolve, reject) => {
-    fetch(`${TV_API_PATH}${param}`)
+    fetch(url)
       .then((response) => response.json())
       .then((data) => resolve(data))
       .catch((err) => reject(err));

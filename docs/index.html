@@ -23,7 +23,7 @@
 
         <div class="card mt-5 p-2">
             <div class="card-body">
-                <h2 class="text-primary">Get Programs</h2>
+                <h2 class="text-primary">Get program list</h2>
                 <code lang="javascript">import { getTVPrograms } from "nahieran-js";
 
 getTVPrograms().then(res => {
@@ -39,7 +39,7 @@ getTVPrograms().then(res => {
 
         <div class="card mt-5 p-2">
             <div class="card-body">
-                <h2 class="text-primary card-title">Get TV Categories</h2>
+                <h2 class="text-primary card-title">Get tv categories</h2>
                 <code lang="javascript">import { getTVCategories } from "nahieran-js";
 
 getTVCategories().then(res => {
@@ -50,7 +50,7 @@ getTVCategories().then(res => {
 
                 <br>
                 DEMO: <button type="button" class="btn btn-primary"
-                    onclick="getDocTVCategories()">GetTVCategories()</button>
+                    onclick="getDocTVCategories()">getTVCategories()</button>
             </div>
         </div>
 
@@ -58,7 +58,7 @@ getTVCategories().then(res => {
 
         <div class="card mt-5 p-2">
             <div class="card-body">
-                <h2 class="text-primary">Get TV Category</h2>
+                <h2 class="text-primary">Get tv category</h2>
                 <code lang="javascript">import { getTVCategory } from "nahieran-js";
 
 getTVCategory(category_slug).then(res => {
@@ -68,7 +68,7 @@ getTVCategory(category_slug).then(res => {
 });</code>
                 <br>
                 DEMO: <input value="PELICULAS" id="getTVCategoryParam" /> <button type="button" class="btn btn-primary"
-                    onclick="getDocTVCategory()">GetTVCategory('PELICULAS')</button>
+                    onclick="getDocTVCategory()">getTVCategory('PELICULAS')</button>
             </div>
         </div>
 
@@ -78,7 +78,7 @@ getTVCategory(category_slug).then(res => {
 
         <div class="card mt-5 p-2">
             <div class="card-body">
-                <h2 class="text-primary">get TV Category Programs</h2>
+                <h2 class="text-primary">Get tv category programs</h2>
                 <code lang="javascript">import { getTVCategoryPrograms } from "nahieran-js";
 
 getTVCategoryPrograms(category_id).then(res => {
@@ -93,7 +93,27 @@ getTVCategoryPrograms(category_id).then(res => {
         </div>
 
 
+        <div class="card mt-5 p-2">
+            <div class="card-body">
+                <h2 class="text-primary">Get tv category program playlist</h2>
+                <code lang="javascript">import { getTVCategoryProgramPlaylist } from "nahieran-js";
 
+getTVCategoryProgramPlaylist(playlist_id).then(res => {
+    console.log("Response: ", res);
+}, err => {
+    console.error("Response error: ", err);
+});</code>
+                <br>
+                DEMO: <input value="8493" id="getTVCategoryProgramPlaylistParam" /> <button type="button"
+                    class="btn btn-primary" onclick="getDocTVCategoryProgramPlaylist()">getTVCategoryProgramPlaylist(8493)</button>
+            </div>
+        </div>
+
+
+
+        <video width="352" height="198" controls crossorigin="true">
+            <source src="https://vod.eitb.eus/1670684107_c8081146d40ca3566e3e1c86320ddb5c255cdbe8/vod/geozone1/2022/12/02/0011696943/0011696943_480x270_768000_58c0e0e5BnfYQOVbhvUs.m3u8" type="application/x-mpegURL">
+        </video>
     </div>
 
 
@@ -117,7 +137,14 @@ getTVCategoryPrograms(category_id).then(res => {
 
 
 <script type="module">
-    import { getTVCategories, getTVCategory, getTVCategoryPrograms, getTVPrograms } from "../src/index.js";
+    import {
+        getTVCategories,
+        getTVCategory,
+        getTVCategoryPrograms,
+        getTVPrograms,
+        getTVCategoryProgramPlaylist
+    } from "../src/index.js";
+    
     const myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
     const getDocTVCategories = () => {
         getTVCategories().then(res => {
@@ -151,6 +178,19 @@ getTVCategoryPrograms(category_id).then(res => {
         }, err => console.error("Response error: ", err));
     };
 
+
+    const getDocTVCategoryProgramPlaylist = () => {
+        const getTVCategoryProgramPlaylistParam = document.getElementById("getTVCategoryProgramPlaylistParam").value;
+
+        getTVCategoryProgramPlaylist(getTVCategoryProgramPlaylistParam).then(res => {
+            console.log("Response: ", res);
+            document.getElementById("modalTitle").innerText = "Get TV Category Programs";
+            document.getElementById("modalBody").innerText = JSON.stringify(res, undefined, 4);
+            myModal.show();
+        }, err => console.error("Response error: ", err));
+    };
+
+
     const getDocTVPrograms = () => {
         getTVPrograms().then(res => {
             console.log("Response: ", res);
@@ -162,6 +202,7 @@ getTVCategoryPrograms(category_id).then(res => {
     window.getDocTVCategories = getDocTVCategories;
     window.getDocTVCategory = getDocTVCategory;
     window.getDocTVCategoryPrograms = getDocTVCategoryPrograms;
+    window.getDocTVCategoryProgramPlaylist = getDocTVCategoryProgramPlaylist;
     window.getDocTVPrograms = getDocTVPrograms;
 
 </script>

@@ -48,6 +48,11 @@ getTVCategory(category_slug).then(res => {
 });
 ````
 
+## Nola erreproduzitu ditzakegu m3u8 fitxategiak?
+Video.js liburutegia erabili dezakegu streaming fitxategia irakurri ahal izateko.
+
+Hemen adibidea: https://bipoza.github.io/nahieran-js/docs/video-js-example.html
+
 ## Garapen ingurunea martxan jartzeko
 JS funtzioak testeatzeko docs karpetan HTML sinple bat dago.
 

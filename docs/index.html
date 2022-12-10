@@ -18,8 +18,19 @@
 
 <body class="bg-dark">
     <div class="container mb-5">
-        <img src="./logo.svg" alt="nahieran-js" class="mt-5"/>
+        <h2 class="float-end text-light m-5"><a href="https://github.com/bipoza/nahieran-js"
+                class="text-decoration-none text-light" target="_blank">GitHub</a></h2>
+        <img src="./logo.svg" alt="nahieran-js" class="mt-5" />
 
+        <div class="card mt-5 p-2">
+            <div class="card-body">
+                <p>This project is based on <a href="https://github.com/erral" target="_blank">@erral's</a> <a
+                    href="https://github.com/erral/eitbapi-react" target="_blank">https://github.com/erral/eitbapi-react</a> project.</p>
+                <p>A set of JS functions to use the EITB Nahieran API</p>
+                <h2 class="text-primary">Install (WIP)</h2>
+                <code>npm i nahieran-js</code>
+            </div>
+        </div>
 
         <div class="card mt-5 p-2">
             <div class="card-body">
@@ -105,7 +116,8 @@ getTVCategoryProgramPlaylist(playlist_id).then(res => {
 });</code>
                 <br>
                 DEMO: <input value="8493" id="getTVCategoryProgramPlaylistParam" /> <button type="button"
-                    class="btn btn-primary" onclick="getDocTVCategoryProgramPlaylist()">getTVCategoryProgramPlaylist(8493)</button>
+                    class="btn btn-primary"
+                    onclick="getDocTVCategoryProgramPlaylist()">getTVCategoryProgramPlaylist(8493)</button>
             </div>
         </div>
 
@@ -124,7 +136,8 @@ getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
 });</code>
                 <br>
                 DEMO: <input value="174848" id="getTVCategoryProgramPlaylistChapterParam" /> <button type="button"
-                    class="btn btn-primary" onclick="getDocTVCategoryProgramPlaylistChapter()">getTVCategoryProgramPlaylistChapter(174848)</button>
+                    class="btn btn-primary"
+                    onclick="getDocTVCategoryProgramPlaylistChapter()">getTVCategoryProgramPlaylistChapter(174848)</button>
             </div>
         </div>
     </div>
@@ -158,7 +171,7 @@ getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
         getTVCategoryProgramPlaylist,
         getTVCategoryProgramPlaylistChapter
     } from "../src/index.js";
-    
+
     const myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
     const getDocTVCategories = () => {
         getTVCategories().then(res => {

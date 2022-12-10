@@ -27,6 +27,10 @@
         class="text-decoration-none text-light" target="_blank">GitHub</a></h2>
     <img src="./logo.svg" alt="nahieran-js" class="mt-5" />
 
+    <h1 class="card bg-light mt-5 p-2">
+      Function explanation
+    </h1>
+
     <div class="card mt-5 p-2">
       <div class="card-body">
         <p>This project is based on <a href="https://github.com/erral" target="_blank">@erral's</a> <a
@@ -38,92 +42,88 @@
       </div>
     </div>
 
+    <h2 class="card bg-light mt-5 p-2">TV</h2>
+
     <div class="card mt-5 p-2">
       <div class="card-body">
         <h2 class="text-primary">Get program list</h2>
         <pre><code class="language-javascript">
-import { getTVPrograms } from "nahieran-js";
+            import { getTVPrograms } from "nahieran-js";
 
-getTVPrograms().then(res => {
-  console.log("Response: ", res);
-}, err => {
-  console.error("Response error: ", err);
-});
+            getTVPrograms().then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });
           </code></pre>
         <br>
         DEMO: <button type="button" class="btn btn-primary" onclick="getDocTVPrograms()">getTVPrograms()</button>
       </div>
+
     </div>
 
     <div class="card mt-5 p-2">
       <div class="card-body">
         <h2 class="text-primary card-title">Get tv categories</h2>
         <pre><code class="language-javascript">
-import { getTVCategories } from "nahieran-js";
+            import { getTVCategories } from "nahieran-js";
 
-getTVCategories().then(res => {
-  console.log("Response: ", res);
-}, err => {
-  console.error("Response error: ", err);
-});</code></pre>
+            getTVCategories().then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
 
         <br>
         DEMO: <button type="button" class="btn btn-primary" onclick="getDocTVCategories()">getTVCategories()</button>
       </div>
     </div>
 
-
-
     <div class="card mt-5 p-2">
       <div class="card-body">
         <h2 class="text-primary">Get tv category</h2>
         <pre><code class="language-javascript">
-import { getTVCategory } from "nahieran-js";
+            import { getTVCategory } from "nahieran-js";
 
-getTVCategory(category_slug).then(res => {
-  console.log("Response: ", res);
-}, err => {
-  console.error("Response error: ", err);
-});</code></pre>
+            getTVCategory(category_slug).then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
         <br>
         DEMO: <input value="PELICULAS" id="getTVCategoryParam" /> <button type="button" class="btn btn-primary"
           onclick="getDocTVCategory()">getTVCategory('PELICULAS')</button>
       </div>
     </div>
 
-
-
-
-
     <div class="card mt-5 p-2">
       <div class="card-body">
         <h2 class="text-primary">Get tv category programs</h2>
         <pre><code class="language-javascript">
-import { getTVCategoryPrograms } from "nahieran-js";
+            import { getTVCategoryPrograms } from "nahieran-js";
 
-getTVCategoryPrograms(category_id).then(res => {
-  console.log("Response: ", res);
-}, err => {
-  console.error("Response error: ", err);
-});</code></pre>
+            getTVCategoryPrograms(category_id).then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
         <br>
         DEMO: <input value="5552" id="getTVCategoryProgramsParam" /> <button type="button" class="btn btn-primary"
           onclick="getDocTVCategoryPrograms()">getTVCategoryPrograms(5552)</button>
       </div>
     </div>
 
-
     <div class="card mt-5 p-2">
       <div class="card-body">
         <h2 class="text-primary">Get tv category program playlist</h2>
         <pre><code class="language-javascript">
-import { getTVCategoryProgramPlaylist } from "nahieran-js";
+            import { getTVCategoryProgramPlaylist } from "nahieran-js";
 
-getTVCategoryProgramPlaylist(playlist_id).then(res => {
-  console.log("Response: ", res);
-}, err => {
-  console.error("Response error: ", err);
-});</code></pre>
+            getTVCategoryProgramPlaylist(playlist_id).then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
         <br>
         DEMO: <input value="8493" id="getTVCategoryProgramPlaylistParam" /> <button type="button"
           class="btn btn-primary"
@@ -131,26 +131,129 @@ getTVCategoryProgramPlaylist(playlist_id).then(res => {
       </div>
     </div>
 
-
-
-
     <div class="card mt-5 p-2">
       <div class="card-body">
         <h2 class="text-primary">Get tv category program playlist chapter</h2>
         <pre><code class="language-javascript">
-import { getTVCategoryProgramPlaylistChapter } from "nahieran-js";
+            import { getTVCategoryProgramPlaylistChapter } from "nahieran-js";
 
-getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
-  console.log("Response: ", res);
-}, err => {
-  console.error("Response error: ", err);
-});</code></pre>
+            getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
         <br>
         DEMO: <input value="174848" id="getTVCategoryProgramPlaylistChapterParam" /> <button type="button"
           class="btn btn-primary"
           onclick="getDocTVCategoryProgramPlaylistChapter()">getTVCategoryProgramPlaylistChapter(174848)</button>
       </div>
     </div>
+
+    <h2 class="card bg-light mt-5 p-2">Radio</h2>
+
+    <div class="card mt-5 p-2">
+      <div class="card-body">
+        <h2 class="text-primary">Get Radio list</h2>
+        <pre><code class="language-javascript">
+            import { getRadios } from "nahieran-js";
+
+            getRadios().then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });
+          </code></pre>
+        <br>
+        DEMO: <button type="button" class="btn btn-primary" onclick="getDocRadios()">getRadios()</button>
+      </div>
+    </div>
+
+    <div class="card mt-5 p-2">
+      <div class="card-body">
+        <h2 class="text-primary">Get Radio programs</h2>
+        <pre><code class="language-javascript">
+            import { getRadioPrograms } from "nahieran-js";
+
+            getRadioPrograms(radio_id).then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
+        <br>
+        DEMO: <input value="euskadi_irratia" id="getRadioProgramsParam" /> <button type="button" class="btn btn-primary"
+          onclick="getDocRadioPrograms()">getRadioPrograms('euskadi_irratia')</button>
+      </div>
+    </div>
+
+    <div class="card mt-5 p-2">
+      <div class="card-body">
+        <h2 class="text-primary">Get Radio program</h2>
+        <pre><code class="language-javascript">
+            import { getRadioProgram } from "nahieran-js";
+
+            getRadioProgram(program_id).then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
+        <br>
+        DEMO: <input value="5451" id="getRadioProgramParam" /> <button type="button" class="btn btn-primary"
+          onclick="getDocRadioProgram()">getRadioProgram('5451')</button>
+      </div>
+    </div>
+
+    <div class="card mt-5 p-2">
+      <div class="card-body">
+        <h2 class="text-primary">Get Radio program seasons</h2>
+        <pre><code class="language-javascript">
+            import { getRadioProgramSeasons} from "nahieran-js";
+
+            getRadioProgramSeasons(program_id).then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
+        <br>
+        DEMO: <input value="5451" id="getRadioProgramSeasonsParam" /> <button type="button" class="btn btn-primary"
+          onclick="getDocRadioProgramSeasons()">getRadioProgramSeasons('5451')</button>
+      </div>
+    </div>
+
+    <div class="card mt-5 p-2">
+      <div class="card-body">
+        <h2 class="text-primary">Get Radio program season chapters</h2>
+        <pre><code class="language-javascript">
+            import { getRadioProgramSeason } from "nahieran-js";
+
+            getRadioProgramSeason(program_id).then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
+        <br>
+        DEMO: <input value="8912852" id="getRadioProgramSeasonParam" /> <button type="button" class="btn btn-primary"
+          onclick="getDocRadioProgramSeason()">getRadioProgramSeason('8912852')</button>
+      </div>
+    </div>
+
+    <div class="card mt-5 p-2">
+      <div class="card-body">
+        <h2 class="text-primary">Get Radio program season chapter</h2>
+        <pre><code class="language-javascript">
+            import { getRadioProgramSeasonChapter } from "nahieran-js";
+
+            getRadioProgramSeasonChapter(program_id).then(res => {
+            console.log("Response: ", res);
+            }, err => {
+            console.error("Response error: ", err);
+            });</code></pre>
+        <br>
+        DEMO: <input value="9031219" id="getRadioProgramSeasonChapterParam" /> <button type="button"
+          class="btn btn-primary"
+          onclick="getDocRadioProgramSeasonChapter()">getRadioProgramSeasonChapter('9031219')</button>
+      </div>
+    </div>
+
   </div>
 
 
@@ -180,7 +283,13 @@ getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
     getTVCategoryPrograms,
     getTVPrograms,
     getTVCategoryProgramPlaylist,
-    getTVCategoryProgramPlaylistChapter
+    getTVCategoryProgramPlaylistChapter,
+    getRadios,
+    getRadioPrograms,
+    getRadioProgramData,
+    getRadioProgramSeasons,
+    getRadioProgramSeason,
+    getRadioProgramSeasonChapter,
   } from "../src/index.js";
 
   const myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
@@ -204,7 +313,6 @@ getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
     }, err => console.error("Response error: ", err));
   };
 
-
   const getDocTVCategoryPrograms = () => {
     const getTVCategoryProgramsParam = document.getElementById("getTVCategoryProgramsParam").value;
 
@@ -215,7 +323,6 @@ getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
       myModal.show();
     }, err => console.error("Response error: ", err));
   };
-
 
   const getDocTVCategoryProgramPlaylist = () => {
     const getTVCategoryProgramPlaylistParam = document.getElementById("getTVCategoryProgramPlaylistParam").value;
@@ -228,7 +335,6 @@ getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
     }, err => console.error("Response error: ", err));
   };
 
-
   const getDocTVCategoryProgramPlaylistChapter = () => {
     const getTVCategoryProgramPlaylisChaptertParam = document.getElementById("getTVCategoryProgramPlaylistChapterParam").value;
 
@@ -240,7 +346,6 @@ getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
     }, err => console.error("Response error: ", err));
   };
 
-
   const getDocTVPrograms = () => {
     getTVPrograms().then(res => {
       console.log("Response: ", res);
@@ -249,12 +354,78 @@ getTVCategoryProgramPlaylistChapter(cahpter_id).then(res => {
       myModal.show();
     }, err => console.error("Response error: ", err));
   };
+
+  const getDocRadios = () => {
+    getRadios().then(res => {
+      console.log("Response: ", res);
+      document.getElementById("modalTitle").innerText = "Get Radios";
+      document.getElementById("modalBody").innerHTML = `<pre>${JSON.stringify(res, undefined, 4)}</pre>`;
+      myModal.show();
+    }, err => console.error("Response error: ", err));
+  }
+
+  const getDocRadioPrograms = () => {
+    const getRadioProgramsParam = document.getElementById("getRadioProgramsParam").value;
+    getRadioPrograms(getRadioProgramsParam).then(res => {
+      console.log("Response: ", res);
+      document.getElementById("modalTitle").innerText = "Get Radios";
+      document.getElementById("modalBody").innerHTML = `<pre>${JSON.stringify(res, undefined, 4)}</pre>`;
+      myModal.show();
+    }, err => console.error("Response error: ", err));
+  }
+
+  const getDocRadioProgram = () => {
+    const getRadioProgramParam = document.getElementById("getRadioProgramParam").value;
+    getRadioProgramData(getRadioProgramParam).then(res => {
+      console.log("Response: ", res);
+      document.getElementById("modalTitle").innerText = "Get Radios";
+      document.getElementById("modalBody").innerHTML = `<pre>${JSON.stringify(res, undefined, 4)}</pre>`;
+      myModal.show();
+    }, err => console.error("Response error: ", err));
+  }
+
+  const getDocRadioProgramSeasons = () => {
+    const getDocRadioProgramSeasonsParam = document.getElementById("getRadioProgramSeasonsParam").value;
+    getRadioProgramSeasons(getDocRadioProgramSeasonsParam).then(res => {
+      console.log("Response: ", res);
+      document.getElementById("modalTitle").innerText = "Get Radios";
+      document.getElementById("modalBody").innerHTML = `<pre>${JSON.stringify(res, undefined, 4)}</pre>`;
+      myModal.show();
+    }, err => console.error("Response error: ", err));
+  }
+
+  const getDocRadioProgramSeason = () => {
+    const getDocRadioProgramSeasonParam = document.getElementById("getRadioProgramSeasonParam").value;
+    getRadioProgramSeason(getDocRadioProgramSeasonParam).then(res => {
+      console.log("Response: ", res);
+      document.getElementById("modalTitle").innerText = "Get Radios";
+      document.getElementById("modalBody").innerHTML = `<pre>${JSON.stringify(res, undefined, 4)}</pre>`;
+      myModal.show();
+    }, err => console.error("Response error: ", err));
+  }
+
+  const getDocRadioProgramSeasonChapter = () => {
+    const getDocRadioProgramSeasonChapterParam = document.getElementById("getRadioProgramSeasonChapterParam").value;
+    getRadioProgramSeasonChapter(getDocRadioProgramSeasonChapterParam).then(res => {
+      console.log("Response: ", res);
+      document.getElementById("modalTitle").innerText = "Get Radios";
+      document.getElementById("modalBody").innerHTML = `<pre>${JSON.stringify(res, undefined, 4)}</pre>`;
+      myModal.show();
+    }, err => console.error("Response error: ", err));
+  }
+
   window.getDocTVCategories = getDocTVCategories;
   window.getDocTVCategory = getDocTVCategory;
   window.getDocTVCategoryPrograms = getDocTVCategoryPrograms;
   window.getDocTVCategoryProgramPlaylist = getDocTVCategoryProgramPlaylist;
   window.getDocTVCategoryProgramPlaylistChapter = getDocTVCategoryProgramPlaylistChapter;
   window.getDocTVPrograms = getDocTVPrograms;
+  window.getDocRadios = getDocRadios;
+  window.getDocRadioPrograms = getDocRadioPrograms;
+  window.getDocRadioProgram = getDocRadioProgram;
+  window.getDocRadioProgramSeasons = getDocRadioProgramSeasons;
+  window.getDocRadioProgramSeason = getDocRadioProgramSeason;
+  window.getDocRadioProgramSeasonChapter = getDocRadioProgramSeasonChapter;
 
   for (let el of document.getElementsByTagName('code')) {
     // then highlight each

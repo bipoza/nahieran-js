@@ -1,4 +1,4 @@
-export const TV_DOMAIN_PATH = "https://mam.eitb.eus"
+export const TV_DOMAIN_PATH = 'https://mam.eitb.eus';
 
 export const TV_API_PATH = `${TV_DOMAIN_PATH}/mam/REST/ServiceMultiweb`;
 

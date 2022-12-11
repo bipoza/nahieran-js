@@ -169,7 +169,7 @@ const getTVCategoryProgramPlaylistChapter = (chapter_id) => {
               return {
                 encoding_rate: video.ENCODING_RATE,
                 height: video.FRAME_HEIGHT,
-                width: video.WIDTH,
+                width: video.FRAME_WIDTH,
                 url: video.PMD_URL,
               };
             }),

@@ -64,11 +64,11 @@ const getTVCategory = (category_slug) => {
   });
 };
 
-const getTVCategoryPrograms = (category_id) => {
+const getTVCategoryPrograms = (program_id) => {
   return new Promise(async (resolve, reject) => {
     try {
       const data = await fetchAPI(
-        `${TV_API_PATH}${TV_API_CATEGORY_PROGRAM}/${category_id}/`,
+        `${TV_API_PATH}${TV_API_CATEGORY_PROGRAM}/${program_id}/`,
       );
       const parsedData = {
         count: data.num,

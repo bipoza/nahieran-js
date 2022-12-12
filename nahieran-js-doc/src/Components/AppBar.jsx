@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { GITHUB_REPO } from '../config/contants';
 export default function MenuAppBar() {
 
-    const pages = ['TV', 'Radios', 'About'];
+    const pages = ['TV', 'Radios', 'Contributing'];
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {

@@ -1,26 +1,17 @@
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import React from 'react';
 import MenuAppBar from './Components/AppBar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import CssBaseline from '@mui/material/CssBaseline';
 import {
-  Card, CardContent, Typography, CardActions, Button,
+  Typography,
+  CssBaseline,
+  Toolbar,
+  Box,
+  Container
 } from "@mui/material"
-import MarkDown from './Components/MarkDown';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { getTVPrograms } from "http://127.0.0.1:3001/src/index.js";
-import { getTVPrograms } from "nahieran-js";
-import React from 'react';
 import DocCard from './Components/DocCard';
-
-
-
-
+import { TV_DOCS } from './Docs/tv';
+import { GETTING_STARTED } from './Docs/general';
 
 
 function App() {
@@ -34,20 +25,6 @@ function App() {
     },
   });
 
-
-  const markdown = `
-  ~~~js
-  import { getTVPrograms } from "nahieran-js";
-
-  getTVPrograms().then(res => {
-    console.log("Response: ", res);
-  }, err => {
-    console.error("Response error: ", err);
-  });
-
-  ~~~
-  `;
-
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
@@ -56,48 +33,21 @@ function App() {
         <Box component="main" sx={{ p: 3 }}>
           <Toolbar />
 
-
-
-
           <DocCard
-            title="Getting started"
-            markdown={`
-This project is based on [@erral's](https://github.com/erral) [https://github.com/erral/eitbapi-react](https://github.com/erral/eitbapi-react) project.
+            title={GETTING_STARTED.title}
+            markdown={GETTING_STARTED.description} />
 
-A set of JS functions to use the EITB Nahieran API
-## Install 
-~~~bash
-npm i nahieran-js
-~~~
-            `} />
-
-          <Typography variant="h2" id="TV" color="text.secondary" gutterBottom sx={{ marginTop: 3 }}>
-            TV
-          </Typography>
-
-
-          <DocCard
-            title="Get TV program list"
-            markdown={markdown}
-            demoFunction={getTVPrograms} />
-          {/* <Card variant="outlined">
-
-
-            <CardContent>
-              <Typography variant="h3" color="text.secondary" gutterBottom>
-                
-              </Typography>
-
-
-              <MarkDown markdown={markdown} />
-            </CardContent>
-            <CardActions>
-              <Button size="small" onClick={getTVProgramsHandler}>Try it!</Button>
-            </CardActions>
-          </Card> */}
-
-
-
+          <Box id="TV">
+            <Typography variant="h2" id="TV" color="text.secondary" gutterBottom sx={{ marginTop: 3 }}>
+              TV
+            </Typography>
+            {
+              TV_DOCS.map(doc => <DocCard
+                title={doc.title}
+                markdown={doc.description}
+                demoFunction={doc.demoFunction} />)
+            }
+          </Box>
 
         </Box>
       </Container>

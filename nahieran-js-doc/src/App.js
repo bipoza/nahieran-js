@@ -12,7 +12,7 @@ import {
 import DocCard from './Components/DocCard';
 import { TV_DOCS } from './Docs/tv';
 import { GETTING_STARTED } from './Docs/general';
-
+import './App.css';
 
 function App() {
   const darkTheme = createTheme({
@@ -24,9 +24,24 @@ function App() {
       }
     },
   });
-
+  const lightTheme = createTheme({
+    palette: {
+      mode: 'light',
+      // primary: blueGrey,
+      primary: { main: "#343C46" },
+      text: {
+        primary: "#343C46",
+        secondary: "#343C46",
+      },
+      divider: "#343C46",
+      background: {
+        // default: "#222831",
+        // paper: "#1B2430"
+      }
+    },
+  });
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={lightTheme}>
       <CssBaseline />
       <Container fixed>
         <MenuAppBar />
@@ -42,10 +57,14 @@ function App() {
               TV
             </Typography>
             {
-              TV_DOCS.map(doc => <DocCard
-                title={doc.title}
-                markdown={doc.description}
-                demoFunction={doc.demoFunction} />)
+              TV_DOCS.map(doc => <Box sx={{ marginBottom: 3 }}>
+                <DocCard
+                  title={doc.title}
+                  markdown={doc.description}
+                  actionFunction={doc.actionFunction}
+                  actionParam={doc.actionParam}
+                />
+              </Box>)
             }
           </Box>
 

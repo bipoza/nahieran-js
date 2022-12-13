@@ -8,12 +8,12 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogContentText,
   DialogActions,
+  TextField,
 } from "@mui/material";
 import MarkDown from "./MarkDown";
 
-const DocCard = ({ title, markdown, demoFunction = null }) => {
+const DocCard = ({ title, markdown, actionFunction = null, actionParam = null }) => {
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogTitle, setDialogTitle] = useState("");
   const [dialogContent, setDialogContent] = useState("");
@@ -24,14 +24,20 @@ const DocCard = ({ title, markdown, demoFunction = null }) => {
   const demoFunctionHandler = () => {
     setOpenDialog(true);
     setDialogTitle("Get TV program list");
-    demoFunction && demoFunction().then((res) => {
-      console.log("OK: ", res);
-      setDialogContent(res);
-    });
+    actionFunction &&
+    actionFunction(demoFunctionParam|| null).then((res) => {
+        console.log("OK: ", res);
+        setDialogContent(res);
+      });
   };
+
+  const [demoFunctionParam, setDemoFunctionParam] = useState(actionParam);
+  function demoFunctionParamChange(event) {
+    setDemoFunctionParam(event.target.value);
+  }
   return (
     <>
-      <Card variant="outlined">
+      <Card variant="outlined" sx={{ borderRadius: "20px" }}>
         <CardContent>
           <Typography variant="h3" color="text.secondary" gutterBottom>
             {title}
@@ -39,9 +45,21 @@ const DocCard = ({ title, markdown, demoFunction = null }) => {
 
           <MarkDown markdown={markdown} />
         </CardContent>
-        {demoFunction && (
-          <CardActions>
-            <Button size="small" onClick={demoFunctionHandler}>
+        {actionFunction && (
+          <CardActions style={{marginBottom: "10px",marginLeft:"10px", paddingTop: "none"}}>
+            {actionParam && (
+              <TextField
+                size="small"
+                label="Function parameter"
+                value={demoFunctionParam}
+                onChange={demoFunctionParamChange}
+              />
+            )}
+
+            <Button
+              size="small"
+              onClick={demoFunctionHandler}
+            >
               Try it!
             </Button>
           </CardActions>
@@ -55,10 +73,9 @@ const DocCard = ({ title, markdown, demoFunction = null }) => {
       >
         <DialogTitle id="alert-dialog-title">{dialogTitle}</DialogTitle>
         <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            {dialogContent && JSON.stringify(dialogContent)}
-            {/* // <SyntaxHighlighter language="json"></SyntaxHighlighter> */}
-          </DialogContentText>
+            {dialogContent && (
+              <pre>{JSON.stringify(dialogContent, undefined, 4)}</pre>
+            )}
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} autoFocus>

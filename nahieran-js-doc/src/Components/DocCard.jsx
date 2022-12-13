@@ -10,10 +10,19 @@ import {
   DialogContent,
   DialogActions,
   TextField,
+  Link,
+  Snackbar,
 } from "@mui/material";
 import MarkDown from "./MarkDown";
-
-const DocCard = ({ title, markdown, actionFunction = null, actionParam = null }) => {
+import { stringSlugify } from "../helpers/utils";
+import LinkIcon from "@mui/icons-material/Link";
+import { Window } from "@mui/icons-material";
+const DocCard = ({
+  title,
+  markdown,
+  actionFunction = null,
+  actionParam = null,
+}) => {
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogTitle, setDialogTitle] = useState("");
   const [dialogContent, setDialogContent] = useState("");
@@ -25,7 +34,7 @@ const DocCard = ({ title, markdown, actionFunction = null, actionParam = null })
     setOpenDialog(true);
     setDialogTitle("Get TV program list");
     actionFunction &&
-    actionFunction(demoFunctionParam|| null).then((res) => {
+      actionFunction(demoFunctionParam || null).then((res) => {
         console.log("OK: ", res);
         setDialogContent(res);
       });
@@ -35,18 +44,50 @@ const DocCard = ({ title, markdown, actionFunction = null, actionParam = null })
   function demoFunctionParamChange(event) {
     setDemoFunctionParam(event.target.value);
   }
+
+  const [openCopyToClipboardMessage, setOpenCopyToClipboardMessage] =
+    useState(false);
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(
+      `${window.location.host}#${stringSlugify(title)}`
+    );
+    setOpenCopyToClipboardMessage(true);
+    setTimeout(() => setOpenCopyToClipboardMessage(false), 3000);
+  };
   return (
     <>
-      <Card variant="outlined" sx={{ borderRadius: "20px" }}>
+      <Card
+        variant="outlined"
+        sx={{ borderRadius: "20px" }}
+        id={stringSlugify(title)}
+      >
         <CardContent>
           <Typography variant="h3" color="text.secondary" gutterBottom>
-            {title}
+            <Link 
+              href={`#${stringSlugify(title)}`}
+              onClick={copyToClipboard}
+              color="inherit"
+              underline="none">
+              {title}
+              <LinkIcon  sx={{marginLeft: "10px"}}/>
+            </Link>
+            <Snackbar
+              open={openCopyToClipboardMessage}
+              message="Copied to clipboard"
+              anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+            />
           </Typography>
 
           <MarkDown markdown={markdown} />
         </CardContent>
         {actionFunction && (
-          <CardActions style={{marginBottom: "10px",marginLeft:"10px", paddingTop: "none"}}>
+          <CardActions
+            style={{
+              marginBottom: "10px",
+              marginLeft: "10px",
+              paddingTop: "none",
+            }}
+          >
             {actionParam && (
               <TextField
                 size="small"
@@ -56,15 +97,13 @@ const DocCard = ({ title, markdown, actionFunction = null, actionParam = null })
               />
             )}
 
-            <Button
-              size="small"
-              onClick={demoFunctionHandler}
-            >
+            <Button size="small" onClick={demoFunctionHandler}>
               Try it!
             </Button>
           </CardActions>
         )}
       </Card>
+
       <Dialog
         open={openDialog}
         onClose={handleClose}
@@ -73,9 +112,9 @@ const DocCard = ({ title, markdown, actionFunction = null, actionParam = null })
       >
         <DialogTitle id="alert-dialog-title">{dialogTitle}</DialogTitle>
         <DialogContent>
-            {dialogContent && (
-              <pre>{JSON.stringify(dialogContent, undefined, 4)}</pre>
-            )}
+          {dialogContent && (
+            <pre>{JSON.stringify(dialogContent, undefined, 4)}</pre>
+          )}
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} autoFocus>

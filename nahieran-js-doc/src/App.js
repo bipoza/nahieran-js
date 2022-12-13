@@ -13,8 +13,10 @@ import DocCard from './Components/DocCard';
 import { TV_DOCS } from './Docs/tv';
 import { GETTING_STARTED } from './Docs/general';
 import './App.css';
+import useScrollToHash from 'helpers/hooks/useScrollToHash';
 
 function App() {
+  useScrollToHash();
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
@@ -33,13 +35,16 @@ function App() {
         primary: "#343C46",
         secondary: "#343C46",
       },
-      divider: "#343C46",
+      divider: "#bcc0c4",
       background: {
         // default: "#222831",
         // paper: "#1B2430"
       }
     },
   });
+
+ 
+
   return (
     <ThemeProvider theme={lightTheme}>
       <CssBaseline />
@@ -57,7 +62,7 @@ function App() {
               TV
             </Typography>
             {
-              TV_DOCS.map(doc => <Box sx={{ marginBottom: 3 }}>
+              TV_DOCS.map((doc, i) => <Box sx={{ marginBottom: 3 }} key={i}>
                 <DocCard
                   title={doc.title}
                   markdown={doc.description}

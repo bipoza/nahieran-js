@@ -6,14 +6,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
-
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useTheme } from "@mui/material/styles";
 import { GITHUB_REPO, APPBAR_ITEMS } from "../config/contants";
 import { Typography } from "@mui/material";
-
 import DarkModeToggle from "./DarkModeToggle";
 
 export default function MenuAppBar() {
@@ -53,9 +51,16 @@ export default function MenuAppBar() {
               }}
             >
               {APPBAR_ITEMS.map((page, i) => (
-                <MenuItem onClick={handleClose} key={i}>
-                  {page}
-                </MenuItem>
+                <Link
+                  href={`#${page}`}
+                  key={i}
+                  color="inherit"
+                  underline="none"
+                >
+                  <MenuItem onClick={handleClose}>
+                    {page}
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
             <Box sx={{ display: { xs: "block", md: "none" } }}>

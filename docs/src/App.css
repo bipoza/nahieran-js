@@ -1,0 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.border-radius {
+    border-radius: 10px;
+}
+
+a {
+ color: rgb(237, 108, 2);
+}

@@ -6,14 +6,7 @@ import {
   RADIO_PROGRAM_SEASON_CHAPTERS,
   RADIO_PROGRAM_SEASON_CHAPTER,
 } from './constants.js';
-import {
-  build_radio_url,
-  build_radio_program_url,
-  build_radio_program_data_url,
-  build_radio_program_season_url,
-  build_radio_program_season_chapter_url,
-  get_current_datetime,
-} from './helpers/utils.js';
+import { get_current_datetime } from './helpers/utils.js';
 import { fetchAPI } from './helpers/fetch.js';
 
 const getRadios = () => {
@@ -23,10 +16,7 @@ const getRadios = () => {
         count: RADIOS.length,
         timestamp: get_current_datetime(),
         radios: RADIOS.map((item) => {
-          return {
-            ...item,
-            '@id': build_radio_url(item),
-          };
+          return item;
         }),
       };
       resolve(parsedData);
@@ -45,10 +35,7 @@ const getRadioPrograms = (radio_id) => {
         count: data.num,
         timestamp: data.timestamp,
         programs: data.map((item) => {
-          return {
-            ...item,
-            '@id': build_radio_program_url(item),
-          };
+          return item;
         }),
       };
       resolve(parsedData);
@@ -68,17 +55,9 @@ const getRadioProgramData = (program_id) => {
         timestamp: get_current_datetime(),
         data: {
           ...data,
-          '@id': build_radio_program_data_url(data),
-          seasons: getRadioProgramSeasons(data.id).then(
+          seasons: await getRadioProgramSeasons(program_id).then(
             (season_data) => {
-              return season_data.seasons.map((season) => {
-                return {
-                  '@id': '',
-                };
-              });
-            },
-            (err) => {
-              return [];
+              return season_data;
             },
           ),
         },
@@ -99,10 +78,7 @@ const getRadioProgramSeasons = (program_id) => {
         count: data.length,
         timestamp: get_current_datetime(),
         seasons: data.map((item) => {
-          return {
-            ...item,
-            '@id': build_radio_program_season_url(item),
-          };
+          return item;
         }),
       };
       resolve(parsedData);
@@ -122,10 +98,7 @@ const getRadioProgramSeason = (season_id) => {
         count: data.length,
         timestamp: get_current_datetime(),
         chapters: data.map((item) => {
-          return {
-            ...item,
-            '@id': build_radio_program_season_chapter_url(item),
-          };
+          return item;
         }),
       };
       resolve(parsedData);
@@ -145,7 +118,6 @@ const getRadioProgramSeasonChapter = (chapter_id) => {
         count: data.length,
         timestamp: get_current_datetime(),
         ...data,
-        '@id': build_radio_program_season_chapter_url(data),
       };
       resolve(parsedData);
     } catch (err) {

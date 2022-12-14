@@ -11,7 +11,7 @@
     "dist"
   ],
   "scripts": {
-    "start": "http-server -p 3000 -o docs",
+    "start": "http-server -p 3001 -o docs --cors",
     "build": "npm run clean && rollup -c --bundleConfigAsCjs",
     "clean": "rimraf dist",
     "release": "release-it",

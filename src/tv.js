@@ -9,12 +9,6 @@ import {
 } from './constants.js';
 import { fetchAPI } from './helpers/fetch.js';
 import { parseImage } from './helpers/parsers.js';
-import {
-  build_tv_category_program_playlist_program_url,
-  build_tv_category_program_playlist_url,
-  build_tv_category_program_url,
-  build_tv_category_url,
-} from './helpers/utils.js';
 
 const getTVCategories = () => {
   return new Promise(async (resolve, reject) => {
@@ -26,7 +20,6 @@ const getTVCategories = () => {
         timestamp: data.timestamp,
         categories: data.web_clasif.map((item) => {
           return {
-            '@id': build_tv_category_url(item),
             id: item.ID_WEB_CLASIF,
             slug: item.CLASIFICACION,
             eu: item.CLASIFICACION_EU,
@@ -54,7 +47,6 @@ const getTVCategory = (category_slug) => {
         timestamp: data.timestamp,
         program: data.web_group.map((item) => {
           return {
-            '@id': build_tv_category_program_url(item),
             id: item.ID_WEB_GROUP,
             title: item.NOMBRE_GROUP,
             order: item.ORDEN,
@@ -72,11 +64,11 @@ const getTVCategory = (category_slug) => {
   });
 };
 
-const getTVCategoryPrograms = (category_id) => {
+const getTVCategoryPrograms = (program_id) => {
   return new Promise(async (resolve, reject) => {
     try {
       const data = await fetchAPI(
-        `${TV_API_PATH}${TV_API_CATEGORY_PROGRAM}/${category_id}/`,
+        `${TV_API_PATH}${TV_API_CATEGORY_PROGRAM}/${program_id}/`,
       );
       const parsedData = {
         count: data.num,
@@ -91,7 +83,6 @@ const getTVCategoryPrograms = (category_id) => {
           : [],
         playlist: data.web_group[0].web_playlist.map((item) => {
           return {
-            '@id': build_tv_category_program_playlist_url(item),
             id: item.ID,
             name: item.NAME,
             order: item.ORDER,
@@ -126,7 +117,6 @@ const getTVCategoryProgramPlaylist = (playlist_id) => {
         description: data.desc_playlist,
         playlist: data.web_media.map((item) => {
           return {
-            '@id': build_tv_category_program_playlist_program_url(item),
             id: item.ID,
             name: item[`NAME_${item.IDIOMA}`],
             chapter_title: item[`CHAPTER_${item.IDIOMA}`],
@@ -164,7 +154,6 @@ const getTVCategoryProgramPlaylistChapter = (chapter_id) => {
         description: data.desc_playlist,
         playlist: data.web_media.map((item) => {
           return {
-            '@id': build_tv_category_program_playlist_program_url(item),
             id: item.ID,
             name: item[`NAME_${item.IDIOMA}`],
             chapter_title: item[`CHAPTER_${item.IDIOMA}`],
@@ -180,7 +169,7 @@ const getTVCategoryProgramPlaylistChapter = (chapter_id) => {
               return {
                 encoding_rate: video.ENCODING_RATE,
                 height: video.FRAME_HEIGHT,
-                width: video.WIDTH,
+                width: video.FRAME_WIDTH,
                 url: video.PMD_URL,
               };
             }),
@@ -212,7 +201,6 @@ const getTVPrograms = () => {
         timestamp: data.timestamp,
         programs: data.web_group.map((item) => {
           return {
-            '@id': build_tv_category_program_url(item),
             id: item.ID_WEB_GROUP,
             name: item.NOMBRE_GROUP,
             order: item.ORDEN,

@@ -14,15 +14,18 @@ import { TV_DOCS } from './Docs/tv';
 import { GETTING_STARTED } from './Docs/general';
 import './App.css';
 import useScrollToHash from 'helpers/hooks/useScrollToHash';
-
+import { DarkModeContext } from './helpers/context';
+import useLocalStorage from './helpers/hooks/useLocalStorage';
 function App() {
   useScrollToHash();
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
       background: {
-        // default: "#222831",
-        paper: "#1B2430"
+        default: "#222831",
+        paper: "#1B2430",
+        // default: "#1B2430",
+        // paper: "#222831"
       }
     },
   });
@@ -43,39 +46,42 @@ function App() {
     },
   });
 
- 
 
+  const [darkMode, setDarkMode] = useLocalStorage("dark", false);
+  const value = { darkMode, setDarkMode };
   return (
-    <ThemeProvider theme={lightTheme}>
-      <CssBaseline />
-      <Container fixed>
-        <MenuAppBar />
-        <Box component="main" sx={{ p: 3 }}>
-          <Toolbar />
+    <DarkModeContext.Provider value={value}>
+      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+        <CssBaseline />
+        <Container fixed>
+          <MenuAppBar />
+          <Box component="main" sx={{ p: 3 }}>
+            <Toolbar />
 
-          <DocCard
-            title={GETTING_STARTED.title}
-            markdown={GETTING_STARTED.description} />
+            <DocCard
+              title={GETTING_STARTED.title}
+              markdown={GETTING_STARTED.description} />
 
-          <Box id="TV">
-            <Typography variant="h2" id="TV" color="text.secondary" gutterBottom sx={{ marginTop: 3 }}>
-              TV
-            </Typography>
-            {
-              TV_DOCS.map((doc, i) => <Box sx={{ marginBottom: 3 }} key={i}>
-                <DocCard
-                  title={doc.title}
-                  markdown={doc.description}
-                  actionFunction={doc.actionFunction}
-                  actionParam={doc.actionParam}
-                />
-              </Box>)
-            }
+            <Box id="TV">
+              <Typography variant="h2" id="TV" color="text.secondary" gutterBottom sx={{ marginTop: 3 }}>
+                TV
+              </Typography>
+              {
+                TV_DOCS.map((doc, i) => <Box sx={{ marginBottom: 3 }} key={i}>
+                  <DocCard
+                    title={doc.title}
+                    markdown={doc.description}
+                    actionFunction={doc.actionFunction}
+                    actionParam={doc.actionParam}
+                  />
+                </Box>)
+              }
+            </Box>
+
           </Box>
-
-        </Box>
-      </Container>
-    </ThemeProvider>
+        </Container>
+      </ThemeProvider>
+    </DarkModeContext.Provider>
   );
 }
 

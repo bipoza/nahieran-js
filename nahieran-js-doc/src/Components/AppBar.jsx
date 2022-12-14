@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -13,6 +13,9 @@ import MenuItem from "@mui/material/MenuItem";
 import { useTheme } from "@mui/material/styles";
 import { GITHUB_REPO } from "../config/contants";
 import { Typography } from "@mui/material";
+
+import DarkModeToggle from "./DarkModeToggle";
+
 export default function MenuAppBar() {
   const pages = ["TV", "Radios", "Contributing"];
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -24,7 +27,9 @@ export default function MenuAppBar() {
     setAnchorEl(null);
   };
   const theme = useTheme();
-  console.log(theme);
+  // console.log(theme);
+
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -96,6 +101,8 @@ export default function MenuAppBar() {
                 </Link>
               ))}
             </Box>
+
+            <DarkModeToggle />
 
             <Link
               href={GITHUB_REPO}

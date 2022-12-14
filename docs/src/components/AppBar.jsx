@@ -72,22 +72,18 @@ export default function MenuAppBar() {
               </IconButton>
             </Box>
 
-            {/* <img
-              src="/logo.svg"
-              alt="nahieran-js-logo"
-              style={{ width: "200px" }}
-            /> */}
-            <Typography variant="h4">
-              Nahieran
-              <span style={{ color: theme.palette.warning.main }}>JS</span>
-            </Typography>
+            <Link href="#getting-started" color="inherit" underline="none">
+              <Typography variant="h4">
+                Nahieran
+                <span style={{ color: theme.palette.warning.main }}>JS</span>
+              </Typography>
+            </Link>
             <Box
               sx={{
                 flexGrow: 1,
                 marginLeft: 5,
                 display: { xs: "none", md: "flex" },
               }}
-              // justifyContent="center"
             >
               {APPBAR_ITEMS.map((page, i) => (
                 <Link

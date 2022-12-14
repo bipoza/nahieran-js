@@ -14,7 +14,7 @@ import './App.css';
 import useScrollToHash from 'hooks/useScrollToHash';
 import { DarkModeContext } from './helpers/context';
 import useLocalStorage from './hooks/useLocalStorage';
-import { GETTING_STARTED, RADIO_DOCS, TV_DOCS } from './docs';
+import { GETTING_STARTED, RADIO_DOCS, TV_DOCS, CONTRIBUTING } from './docs';
 
 function App() {
   useScrollToHash();
@@ -91,6 +91,12 @@ function App() {
                   />
                 </Box>)
               }
+            </Box>
+
+            <Box id="Contributing">
+              <DocCard
+                title={CONTRIBUTING.title}
+                markdown={CONTRIBUTING.description} />
             </Box>
           </Box>
         </Container>

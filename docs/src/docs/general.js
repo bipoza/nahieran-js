@@ -1,6 +1,6 @@
 export const GETTING_STARTED = {
-    title:"Getting started",
-    description:`    
+    title: "Getting started",
+    description: `    
 A set of JS functions to use the EITB Nahieran API.
 
 This project is based on [https://github.com/erral/eitbapi-react](https://github.com/erral/eitbapi-react) project.
@@ -10,4 +10,18 @@ A very special thanks to [@erral](https://github.com/erral) for the contribution
 ~~~bash
 npm i nahieran-js
 ~~~`
+}
+
+export const CONTRIBUTING = {
+    title: "Contributing",
+    description:
+`
+## To run the development environment
+Go to /docs folder, install packages and start the project!
+
+~~~bash
+cd docs
+npm i
+npm run start
+`
 }

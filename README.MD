@@ -1,62 +1,33 @@
-# NahieranJS
-
-Proiektu hau [@erral](https://github.com/erral)-en https://github.com/erral/eitbapi-react proiektuan oinarrituta dago.
-
-Proiektu honen helburua Nahieran-eko APIa erabiltzeko beharrezkoak diren Javascript funtzioak lortzea da.
-
-Dokumentazioa: https://bipoza.github.io/nahieran-js/docs/
+# Nahieran<span style="color:#ffa726;">JS</span>
 
 
-Adibideak:
+A set of JS functions to use the EITB Nahieran API.
 
-````JS
-import { getTVCategories, getTVCategory } from "nahieran-js";
-   
-getTVCategories().then(res => {
-    console.log("Response: ", res);
-    // Response:
-    // {
-    // "count": 12,
-    // "timestamp": "2022-12-09 20:20:58",
-    // "categories": [
-    //      {
-    //          "id": 12,
-    //          "slug": "PELICULAS",
-    //          "eu": "Zinea",
-    //          "es": "Cine",
-    //          "fr": null,
-    //          "en": "Cinema"
-    //      },
-    //      {
-    //          "id": 14,
-    //          "slug": "ACTUALIDAD",
-    //          "eu": "Albistegiak",
-    //          "es": "Actualidad",
-    //          "fr": null,
-    //          "en": "News"
-    //      },
-    //      ...
-    // ]}
-}, err => {
-    console.error("Response error: ", err);
-});
+This project is based on [https://github.com/erral/eitbapi-react](https://github.com/erral/eitbapi-react) project.
+A very special thanks to [@erral](https://github.com/erral) for the contribution made in this project. ❤️
+## Documentation
+https://bipoza.github.io/nahieran-js/
 
-getTVCategory(category_slug).then(res => {
-    console.log("Response: ", res);
-}, err => {
-    console.error("Response error: ", err);
-});
-````
-
-## Nola erreproduzitu ditzakegu m3u8 fitxategiak?
-Video.js liburutegia erabili dezakegu streaming fitxategia irakurri ahal izateko.
-
-Hemen adibidea: https://bipoza.github.io/nahieran-js/docs/video-js-example.html
-
-## Garapen ingurunea martxan jartzeko
-JS funtzioak testeatzeko docs karpetan HTML sinple bat dago.
+## Install
 
 ```bash
+npm i nahieran-js
+```
+
+## Contributing
+Thanks for your interest in contributing!
+
+If you are interested in improving this project, follow these steps to start it locally:
+
+```bash
+# Go to docs folder
+cd docs
+# Install the packages
 npm i
+# Start the server!
 npm run start
 ```
+
+## Contributors
+
+![contributors](https://contrib.rocks/image?repo=bipoza/nahieran-js "Contributors")

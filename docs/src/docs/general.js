@@ -20,13 +20,12 @@ Thanks for your interest in contributing!
 
 If you are interested in improving this project, follow these steps to start it locally:
 
-* Go to /docs folder
-* Install packages
-* Start the server!
-
 ~~~bash
+# Go to docs folder
 cd docs
+# Install the packages
 npm i
+# Start the server!
 npm run start
 ~~~
 

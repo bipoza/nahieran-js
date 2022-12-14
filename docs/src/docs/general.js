@@ -16,12 +16,22 @@ export const CONTRIBUTING = {
     title: "Contributing",
     description:
 `
-## To run the development environment
-Go to /docs folder, install packages and start the project!
+Thanks for your interest in contributing!
+
+If you are interested in improving this project, follow these steps to start it locally:
+
+* Go to /docs folder
+* Install packages
+* Start the server!
 
 ~~~bash
 cd docs
 npm i
 npm run start
+~~~
+
+## Contributors
+
+![contributors](https://contrib.rocks/image?repo=bipoza/nahieran-js "Contributors")
 `
-}
+};

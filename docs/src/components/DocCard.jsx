@@ -16,7 +16,7 @@ import {
 import MarkDown from "./MarkDown";
 import { stringSlugify } from "../helpers/utils";
 import LinkIcon from "@mui/icons-material/Link";
-import { Window } from "@mui/icons-material";
+
 const DocCard = ({
   title,
   markdown,

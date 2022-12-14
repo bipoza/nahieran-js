@@ -15,12 +15,15 @@ import useScrollToHash from 'hooks/useScrollToHash';
 import { DarkModeContext } from './helpers/context';
 import useLocalStorage from './hooks/useLocalStorage';
 import { GETTING_STARTED, RADIO_DOCS, TV_DOCS, CONTRIBUTING } from './docs';
+import { orange } from '@mui/material/colors';
 
 function App() {
   useScrollToHash();
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
+
+      primary: orange,
       background: {
         default: "#222831",
         paper: "#1B2430",

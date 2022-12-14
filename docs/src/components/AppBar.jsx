@@ -26,7 +26,7 @@ export default function MenuAppBar() {
     setAnchorEl(null);
   };
   const theme = useTheme();
-  // console.log(theme);
+  console.log(theme);
 
   return (
     <>

@@ -102,7 +102,7 @@
         <pre><code class="language-javascript">
             import { getTVCategoryPrograms } from "nahieran-js";
 
-            getTVCategoryPrograms(category_id).then(res => {
+            getTVCategoryPrograms(program_id).then(res => {
             console.log("Response: ", res);
             }, err => {
             console.error("Response error: ", err);
@@ -187,18 +187,18 @@
 
     <div class="card mt-5 p-2">
       <div class="card-body">
-        <h2 class="text-primary">Get Radio program</h2>
+        <h2 class="text-primary">Get Radio program data</h2>
         <pre><code class="language-javascript">
-            import { getRadioProgram } from "nahieran-js";
+            import { getRadioProgramData } from "nahieran-js";
 
-            getRadioProgram(program_id).then(res => {
+            getRadioProgramData(program_id).then(res => {
             console.log("Response: ", res);
             }, err => {
             console.error("Response error: ", err);
             });</code></pre>
         <br>
         DEMO: <input value="5451" id="getRadioProgramParam" /> <button type="button" class="btn btn-primary"
-          onclick="getDocRadioProgram()">getRadioProgram('5451')</button>
+          onclick="getDocRadioProgram()">getRadioProgramData('5451')</button>
       </div>
     </div>
 
@@ -368,7 +368,7 @@
     const getRadioProgramsParam = document.getElementById("getRadioProgramsParam").value;
     getRadioPrograms(getRadioProgramsParam).then(res => {
       console.log("Response: ", res);
-      document.getElementById("modalTitle").innerText = "Get Radios";
+      document.getElementById("modalTitle").innerText = "Get Radio programs";
       document.getElementById("modalBody").innerHTML = `<pre>${JSON.stringify(res, undefined, 4)}</pre>`;
       myModal.show();
     }, err => console.error("Response error: ", err));
@@ -378,7 +378,7 @@
     const getRadioProgramParam = document.getElementById("getRadioProgramParam").value;
     getRadioProgramData(getRadioProgramParam).then(res => {
       console.log("Response: ", res);
-      document.getElementById("modalTitle").innerText = "Get Radios";
+      document.getElementById("modalTitle").innerText = "Get Radio program data (including seasons)";
       document.getElementById("modalBody").innerHTML = `<pre>${JSON.stringify(res, undefined, 4)}</pre>`;
       myModal.show();
     }, err => console.error("Response error: ", err));
@@ -388,7 +388,7 @@
     const getDocRadioProgramSeasonsParam = document.getElementById("getRadioProgramSeasonsParam").value;
     getRadioProgramSeasons(getDocRadioProgramSeasonsParam).then(res => {
       console.log("Response: ", res);
-      document.getElementById("modalTitle").innerText = "Get Radios";
+      document.getElementById("modalTitle").innerText = "Get Radio program seasons";
       document.getElementById("modalBody").innerHTML = `<pre>${JSON.stringify(res, undefined, 4)}</pre>`;
       myModal.show();
     }, err => console.error("Response error: ", err));

@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuAppBar from './Components/AppBar';
+import MenuAppBar from './components/AppBar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {
   Typography,
@@ -9,13 +9,13 @@ import {
   Container
 } from "@mui/material"
 // import { getTVPrograms } from "http://127.0.0.1:3001/src/index.js";
-import DocCard from './Components/DocCard';
-import { TV_DOCS } from './Docs/tv';
-import { GETTING_STARTED } from './Docs/general';
+import DocCard from './components/DocCard';
 import './App.css';
-import useScrollToHash from 'helpers/hooks/useScrollToHash';
+import useScrollToHash from 'hooks/useScrollToHash';
 import { DarkModeContext } from './helpers/context';
-import useLocalStorage from './helpers/hooks/useLocalStorage';
+import useLocalStorage from './hooks/useLocalStorage';
+import { GETTING_STARTED, RADIO_DOCS, TV_DOCS } from './docs';
+
 function App() {
   useScrollToHash();
   const darkTheme = createTheme({
@@ -63,7 +63,7 @@ function App() {
               markdown={GETTING_STARTED.description} />
 
             <Box id="TV">
-              <Typography variant="h2" id="TV" color="text.secondary" gutterBottom sx={{ marginTop: 3 }}>
+              <Typography variant="h2" color="text.secondary" gutterBottom sx={{ marginTop: 3 }}>
                 TV
               </Typography>
               {
@@ -77,7 +77,21 @@ function App() {
                 </Box>)
               }
             </Box>
-
+            <Box id="Radio">
+              <Typography variant="h2" color="text.secondary" gutterBottom sx={{ marginTop: 3 }}>
+                RADIO
+              </Typography>
+              {
+                RADIO_DOCS.map((doc, i) => <Box sx={{ marginBottom: 3 }} key={i}>
+                  <DocCard
+                    title={doc.title}
+                    markdown={doc.description}
+                    actionFunction={doc.actionFunction}
+                    actionParam={doc.actionParam}
+                  />
+                </Box>)
+              }
+            </Box>
           </Box>
         </Container>
       </ThemeProvider>

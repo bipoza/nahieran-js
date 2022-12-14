@@ -11,13 +11,12 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useTheme } from "@mui/material/styles";
-import { GITHUB_REPO } from "../config/contants";
+import { GITHUB_REPO, APPBAR_ITEMS } from "../config/contants";
 import { Typography } from "@mui/material";
 
 import DarkModeToggle from "./DarkModeToggle";
 
 export default function MenuAppBar() {
-  const pages = ["TV", "Radios", "Contributing"];
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -53,7 +52,7 @@ export default function MenuAppBar() {
                 "aria-labelledby": "basic-button",
               }}
             >
-              {pages.map((page, i) => (
+              {APPBAR_ITEMS.map((page, i) => (
                 <MenuItem onClick={handleClose} key={i}>
                   {page}
                 </MenuItem>
@@ -90,7 +89,7 @@ export default function MenuAppBar() {
               }}
               // justifyContent="center"
             >
-              {pages.map((page, i) => (
+              {APPBAR_ITEMS.map((page, i) => (
                 <Link
                   href={`#${page}`}
                   key={i}

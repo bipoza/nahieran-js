@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nahieran-js/static/css/main.890a8fe8.css",
-    "main.js": "/nahieran-js/static/js/main.525b2971.js",
+    "main.js": "/nahieran-js/static/js/main.a5f0d5d8.js",
     "static/js/787.1651f41e.chunk.js": "/nahieran-js/static/js/787.1651f41e.chunk.js",
     "static/media/roboto-all-500-normal.woff": "/nahieran-js/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/nahieran-js/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
@@ -37,11 +37,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/nahieran-js/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/nahieran-js/index.html",
     "main.890a8fe8.css.map": "/nahieran-js/static/css/main.890a8fe8.css.map",
-    "main.525b2971.js.map": "/nahieran-js/static/js/main.525b2971.js.map",
+    "main.a5f0d5d8.js.map": "/nahieran-js/static/js/main.a5f0d5d8.js.map",
     "787.1651f41e.chunk.js.map": "/nahieran-js/static/js/787.1651f41e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.890a8fe8.css",
-    "static/js/main.525b2971.js"
+    "static/js/main.a5f0d5d8.js"
   ]
 }

@@ -29,7 +29,6 @@ export default function MenuAppBar() {
   const theme = useTheme();
   // console.log(theme);
 
-
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -79,7 +78,10 @@ export default function MenuAppBar() {
               alt="nahieran-js-logo"
               style={{ width: "200px" }}
             /> */}
-            <Typography variant="h4">NahieranJS</Typography>
+            <Typography variant="h4">
+              Nahieran
+              <span style={{ color: theme.palette.warning.main }}>JS</span>
+            </Typography>
             <Box
               sx={{
                 flexGrow: 1,

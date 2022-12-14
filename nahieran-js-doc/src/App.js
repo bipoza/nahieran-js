@@ -47,7 +47,7 @@ function App() {
   });
 
 
-  const [darkMode, setDarkMode] = useLocalStorage("dark", false);
+  const [darkMode, setDarkMode] = useLocalStorage("dark", true);
   const value = { darkMode, setDarkMode };
   return (
     <DarkModeContext.Provider value={value}>

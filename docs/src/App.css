@@ -9,3 +9,8 @@ html {
 a {
  color: rgb(237, 108, 2);
 }
+
+.blur-app-bar {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+}

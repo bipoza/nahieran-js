@@ -33,12 +33,7 @@ export default function MenuAppBar() {
           position="fixed"
           component="nav"
           color="transparent"
-          style={{
-            backdropFilter: "blur(20px)",
-            // backgroundColor: "rgb(28 29 31 / 19%)",
-            boxShadow: "none",
-            borderBottom: `0.5px solid ${theme.palette.divider}`,
-          }}
+          className="blur-app-bar"
         >
           <Toolbar>
             <Menu

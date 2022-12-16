@@ -1,0 +1,2634 @@
+[
+    {
+        "comment": "/**\n * Get TV Categories\n * @function\n * @param {string} category_id=789798 - The number of the category.\n */",
+        "meta": {
+            "range": [
+                430,
+                1091
+            ],
+            "filename": "tv.js",
+            "lineno": 18,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000027",
+                "name": "getTVCategories",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Get TV Categories",
+        "kind": "function",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "defaultvalue": 789798,
+                "description": "The number of the category.",
+                "name": "category_id"
+            }
+        ],
+        "name": "getTVCategories",
+        "longname": "getTVCategories",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                528,
+                587
+            ],
+            "filename": "tv.js",
+            "lineno": 21,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000041",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                602,
+                1010
+            ],
+            "filename": "tv.js",
+            "lineno": 23,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000053",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"categories\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                625,
+                640
+            ],
+            "filename": "tv.js",
+            "lineno": 24,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000056",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.num"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                650,
+                675
+            ],
+            "filename": "tv.js",
+            "lineno": 25,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000060",
+                "name": "timestamp",
+                "type": "MemberExpression",
+                "value": "data.timestamp"
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                685,
+                1001
+            ],
+            "filename": "tv.js",
+            "lineno": 26,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000064",
+                "name": "categories",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "categories",
+        "longname": "<anonymous>~parsedData.categories",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                760,
+                782
+            ],
+            "filename": "tv.js",
+            "lineno": 28,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000076",
+                "name": "id",
+                "type": "MemberExpression",
+                "value": "item.ID_WEB_CLASIF"
+            }
+        },
+        "undocumented": true,
+        "name": "id",
+        "longname": "id",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                796,
+                820
+            ],
+            "filename": "tv.js",
+            "lineno": 29,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000080",
+                "name": "slug",
+                "type": "MemberExpression",
+                "value": "item.CLASIFICACION"
+            }
+        },
+        "undocumented": true,
+        "name": "slug",
+        "longname": "slug",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                834,
+                859
+            ],
+            "filename": "tv.js",
+            "lineno": 30,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000084",
+                "name": "eu",
+                "type": "MemberExpression",
+                "value": "item.CLASIFICACION_EU"
+            }
+        },
+        "undocumented": true,
+        "name": "eu",
+        "longname": "eu",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                873,
+                898
+            ],
+            "filename": "tv.js",
+            "lineno": 31,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000088",
+                "name": "es",
+                "type": "MemberExpression",
+                "value": "item.CLASIFICACION_ES"
+            }
+        },
+        "undocumented": true,
+        "name": "es",
+        "longname": "es",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                912,
+                937
+            ],
+            "filename": "tv.js",
+            "lineno": 32,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000092",
+                "name": "fr",
+                "type": "MemberExpression",
+                "value": "item.CLASIFICACION_FR"
+            }
+        },
+        "undocumented": true,
+        "name": "fr",
+        "longname": "fr",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                951,
+                976
+            ],
+            "filename": "tv.js",
+            "lineno": 33,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000096",
+                "name": "en",
+                "type": "MemberExpression",
+                "value": "item.CLASIFICACION_EN"
+            }
+        },
+        "undocumented": true,
+        "name": "en",
+        "longname": "en",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1100,
+                1844
+            ],
+            "filename": "tv.js",
+            "lineno": 44,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000110",
+                "name": "getTVCategory",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getTVCategory",
+        "longname": "getTVCategory",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1209,
+                1301
+            ],
+            "filename": "tv.js",
+            "lineno": 47,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000125",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1315,
+                1763
+            ],
+            "filename": "tv.js",
+            "lineno": 50,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000139",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"program\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1338,
+                1353
+            ],
+            "filename": "tv.js",
+            "lineno": 51,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000142",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.num"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1363,
+                1388
+            ],
+            "filename": "tv.js",
+            "lineno": 52,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000146",
+                "name": "timestamp",
+                "type": "MemberExpression",
+                "value": "data.timestamp"
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1398,
+                1754
+            ],
+            "filename": "tv.js",
+            "lineno": 53,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000150",
+                "name": "program",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "program",
+        "longname": "<anonymous>~parsedData.program",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1469,
+                1490
+            ],
+            "filename": "tv.js",
+            "lineno": 55,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000162",
+                "name": "id",
+                "type": "MemberExpression",
+                "value": "item.ID_WEB_GROUP"
+            }
+        },
+        "undocumented": true,
+        "name": "id",
+        "longname": "id",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1504,
+                1528
+            ],
+            "filename": "tv.js",
+            "lineno": 56,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000166",
+                "name": "title",
+                "type": "MemberExpression",
+                "value": "item.NOMBRE_GROUP"
+            }
+        },
+        "undocumented": true,
+        "name": "title",
+        "longname": "title",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1542,
+                1559
+            ],
+            "filename": "tv.js",
+            "lineno": 57,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000170",
+                "name": "order",
+                "type": "MemberExpression",
+                "value": "item.ORDEN"
+            }
+        },
+        "undocumented": true,
+        "name": "order",
+        "longname": "order",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1573,
+                1601
+            ],
+            "filename": "tv.js",
+            "lineno": 58,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000174",
+                "name": "description",
+                "type": "MemberExpression",
+                "value": "item.SHORT_DESC"
+            }
+        },
+        "undocumented": true,
+        "name": "description",
+        "longname": "description",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1615,
+                1729
+            ],
+            "filename": "tv.js",
+            "lineno": 59,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000178",
+                "name": "images",
+                "type": "ConditionalExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "images",
+        "longname": "images",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1853,
+                2918
+            ],
+            "filename": "tv.js",
+            "lineno": 72,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000208",
+                "name": "getTVCategoryPrograms",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getTVCategoryPrograms",
+        "longname": "getTVCategoryPrograms",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1967,
+                2064
+            ],
+            "filename": "tv.js",
+            "lineno": 75,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000223",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2078,
+                2837
+            ],
+            "filename": "tv.js",
+            "lineno": 78,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000237",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"title\":\"\",\"id\":\"\",\"description\":\"\",\"images\":\"\",\"playlist\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2101,
+                2116
+            ],
+            "filename": "tv.js",
+            "lineno": 79,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000240",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.num"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2126,
+                2151
+            ],
+            "filename": "tv.js",
+            "lineno": 80,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000244",
+                "name": "timestamp",
+                "type": "MemberExpression",
+                "value": "data.timestamp"
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2161,
+                2198
+            ],
+            "filename": "tv.js",
+            "lineno": 81,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000248",
+                "name": "title",
+                "type": "MemberExpression",
+                "value": "data.web_group[0].NOMBRE_GROUP"
+            }
+        },
+        "undocumented": true,
+        "name": "title",
+        "longname": "<anonymous>~parsedData.title",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2208,
+                2242
+            ],
+            "filename": "tv.js",
+            "lineno": 82,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000256",
+                "name": "id",
+                "type": "MemberExpression",
+                "value": "data.web_group[0].ID_WEB_GROUP"
+            }
+        },
+        "undocumented": true,
+        "name": "id",
+        "longname": "<anonymous>~parsedData.id",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2252,
+                2293
+            ],
+            "filename": "tv.js",
+            "lineno": 83,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000264",
+                "name": "description",
+                "type": "MemberExpression",
+                "value": "data.web_group[0].SHORT_DESC"
+            }
+        },
+        "undocumented": true,
+        "name": "description",
+        "longname": "<anonymous>~parsedData.description",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2303,
+                2463
+            ],
+            "filename": "tv.js",
+            "lineno": 84,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000272",
+                "name": "images",
+                "type": "ConditionalExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "images",
+        "longname": "<anonymous>~parsedData.images",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2473,
+                2828
+            ],
+            "filename": "tv.js",
+            "lineno": 89,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000300",
+                "name": "playlist",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "playlist",
+        "longname": "<anonymous>~parsedData.playlist",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2561,
+                2572
+            ],
+            "filename": "tv.js",
+            "lineno": 91,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000316",
+                "name": "id",
+                "type": "MemberExpression",
+                "value": "item.ID"
+            }
+        },
+        "undocumented": true,
+        "name": "id",
+        "longname": "id",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2586,
+                2601
+            ],
+            "filename": "tv.js",
+            "lineno": 92,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000320",
+                "name": "name",
+                "type": "MemberExpression",
+                "value": "item.NAME"
+            }
+        },
+        "undocumented": true,
+        "name": "name",
+        "longname": "name",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2615,
+                2632
+            ],
+            "filename": "tv.js",
+            "lineno": 93,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000324",
+                "name": "order",
+                "type": "MemberExpression",
+                "value": "item.ORDER"
+            }
+        },
+        "undocumented": true,
+        "name": "order",
+        "longname": "order",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2646,
+                2674
+            ],
+            "filename": "tv.js",
+            "lineno": 94,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000328",
+                "name": "description",
+                "type": "MemberExpression",
+                "value": "item.SHORT_DESC"
+            }
+        },
+        "undocumented": true,
+        "name": "description",
+        "longname": "description",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2688,
+                2803
+            ],
+            "filename": "tv.js",
+            "lineno": 95,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000332",
+                "name": "images",
+                "type": "ConditionalExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "images",
+        "longname": "images",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2927,
+                4087
+            ],
+            "filename": "tv.js",
+            "lineno": 108,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000349",
+                "name": "getTVCategoryProgramPlaylist",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getTVCategoryProgramPlaylist",
+        "longname": "getTVCategoryProgramPlaylist",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3049,
+                3156
+            ],
+            "filename": "tv.js",
+            "lineno": 111,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000364",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3170,
+                4006
+            ],
+            "filename": "tv.js",
+            "lineno": 114,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000378",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"id\":\"\",\"category_id\":\"\",\"playlist_id\":\"\",\"language\":\"\",\"name\":\"\",\"description\":\"\",\"playlist\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3193,
+                3208
+            ],
+            "filename": "tv.js",
+            "lineno": 115,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000381",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.num"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3218,
+                3243
+            ],
+            "filename": "tv.js",
+            "lineno": 116,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000385",
+                "name": "timestamp",
+                "type": "MemberExpression",
+                "value": "data.timestamp"
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3253,
+                3264
+            ],
+            "filename": "tv.js",
+            "lineno": 117,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000389",
+                "name": "id",
+                "type": "MemberExpression",
+                "value": "data.id"
+            }
+        },
+        "undocumented": true,
+        "name": "id",
+        "longname": "<anonymous>~parsedData.id",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3274,
+                3304
+            ],
+            "filename": "tv.js",
+            "lineno": 118,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000393",
+                "name": "category_id",
+                "type": "MemberExpression",
+                "value": "data.id_web_group"
+            }
+        },
+        "undocumented": true,
+        "name": "category_id",
+        "longname": "<anonymous>~parsedData.category_id",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3314,
+                3347
+            ],
+            "filename": "tv.js",
+            "lineno": 119,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000397",
+                "name": "playlist_id",
+                "type": "MemberExpression",
+                "value": "data.id_web_playlist"
+            }
+        },
+        "undocumented": true,
+        "name": "playlist_id",
+        "longname": "<anonymous>~parsedData.playlist_id",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3357,
+                3378
+            ],
+            "filename": "tv.js",
+            "lineno": 120,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000401",
+                "name": "language",
+                "type": "MemberExpression",
+                "value": "data.idioma"
+            }
+        },
+        "undocumented": true,
+        "name": "language",
+        "longname": "<anonymous>~parsedData.language",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3388,
+                3403
+            ],
+            "filename": "tv.js",
+            "lineno": 121,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000405",
+                "name": "name",
+                "type": "MemberExpression",
+                "value": "data.name"
+            }
+        },
+        "undocumented": true,
+        "name": "name",
+        "longname": "<anonymous>~parsedData.name",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3413,
+                3444
+            ],
+            "filename": "tv.js",
+            "lineno": 122,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000409",
+                "name": "description",
+                "type": "MemberExpression",
+                "value": "data.desc_playlist"
+            }
+        },
+        "undocumented": true,
+        "name": "description",
+        "longname": "<anonymous>~parsedData.description",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3454,
+                3997
+            ],
+            "filename": "tv.js",
+            "lineno": 123,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000413",
+                "name": "playlist",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "playlist",
+        "longname": "<anonymous>~parsedData.playlist",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3526,
+                3537
+            ],
+            "filename": "tv.js",
+            "lineno": 125,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000425",
+                "name": "id",
+                "type": "MemberExpression",
+                "value": "item.ID"
+            }
+        },
+        "undocumented": true,
+        "name": "id",
+        "longname": "id",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3551,
+                3584
+            ],
+            "filename": "tv.js",
+            "lineno": 126,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000429",
+                "name": "name",
+                "type": "MemberExpression",
+                "value": "item[undefined]"
+            }
+        },
+        "undocumented": true,
+        "name": "name",
+        "longname": "name",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3598,
+                3643
+            ],
+            "filename": "tv.js",
+            "lineno": 127,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000438",
+                "name": "chapter_title",
+                "type": "MemberExpression",
+                "value": "item[undefined]"
+            }
+        },
+        "undocumented": true,
+        "name": "chapter_title",
+        "longname": "chapter_title",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3657,
+                3685
+            ],
+            "filename": "tv.js",
+            "lineno": 128,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000447",
+                "name": "chapter_number",
+                "type": "MemberExpression",
+                "value": "item.chapter"
+            }
+        },
+        "undocumented": true,
+        "name": "chapter_number",
+        "longname": "chapter_number",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3699,
+                3720
+            ],
+            "filename": "tv.js",
+            "lineno": 129,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000451",
+                "name": "language",
+                "type": "MemberExpression",
+                "value": "item.IDIOMA"
+            }
+        },
+        "undocumented": true,
+        "name": "language",
+        "longname": "language",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3734,
+                3780
+            ],
+            "filename": "tv.js",
+            "lineno": 130,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000455",
+                "name": "description",
+                "type": "MemberExpression",
+                "value": "item[undefined]"
+            }
+        },
+        "undocumented": true,
+        "name": "description",
+        "longname": "description",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3794,
+                3831
+            ],
+            "filename": "tv.js",
+            "lineno": 131,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000464",
+                "name": "parental_rating",
+                "type": "MemberExpression",
+                "value": "item.PARENTAL_RATING"
+            }
+        },
+        "undocumented": true,
+        "name": "parental_rating",
+        "longname": "parental_rating",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3845,
+                3880
+            ],
+            "filename": "tv.js",
+            "lineno": 132,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000468",
+                "name": "channel",
+                "type": "MemberExpression",
+                "value": "item.LAST_BROADCST_CHANNEL"
+            }
+        },
+        "undocumented": true,
+        "name": "channel",
+        "longname": "channel",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3894,
+                3925
+            ],
+            "filename": "tv.js",
+            "lineno": 133,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000472",
+                "name": "publication_date",
+                "type": "MemberExpression",
+                "value": "item.PUB_DATE"
+            }
+        },
+        "undocumented": true,
+        "name": "publication_date",
+        "longname": "publication_date",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3939,
+                3972
+            ],
+            "filename": "tv.js",
+            "lineno": 134,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000476",
+                "name": "thumbnail_url",
+                "type": "MemberExpression",
+                "value": "item.THUMBNAIL_URL"
+            }
+        },
+        "undocumented": true,
+        "name": "thumbnail_url",
+        "longname": "thumbnail_url",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4096,
+                5878
+            ],
+            "filename": "tv.js",
+            "lineno": 145,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000490",
+                "name": "getTVCategoryProgramPlaylistChapter",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getTVCategoryProgramPlaylistChapter",
+        "longname": "getTVCategoryProgramPlaylistChapter",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4224,
+                4338
+            ],
+            "filename": "tv.js",
+            "lineno": 148,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000505",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4352,
+                5797
+            ],
+            "filename": "tv.js",
+            "lineno": 151,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000519",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"id\":\"\",\"category_id\":\"\",\"playlist_id\":\"\",\"language\":\"\",\"name\":\"\",\"description\":\"\",\"playlist\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4375,
+                4390
+            ],
+            "filename": "tv.js",
+            "lineno": 152,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000522",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.num"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4400,
+                4425
+            ],
+            "filename": "tv.js",
+            "lineno": 153,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000526",
+                "name": "timestamp",
+                "type": "MemberExpression",
+                "value": "data.timestamp"
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4435,
+                4446
+            ],
+            "filename": "tv.js",
+            "lineno": 154,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000530",
+                "name": "id",
+                "type": "MemberExpression",
+                "value": "data.id"
+            }
+        },
+        "undocumented": true,
+        "name": "id",
+        "longname": "<anonymous>~parsedData.id",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4456,
+                4486
+            ],
+            "filename": "tv.js",
+            "lineno": 155,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000534",
+                "name": "category_id",
+                "type": "MemberExpression",
+                "value": "data.id_web_group"
+            }
+        },
+        "undocumented": true,
+        "name": "category_id",
+        "longname": "<anonymous>~parsedData.category_id",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4496,
+                4529
+            ],
+            "filename": "tv.js",
+            "lineno": 156,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000538",
+                "name": "playlist_id",
+                "type": "MemberExpression",
+                "value": "data.id_web_playlist"
+            }
+        },
+        "undocumented": true,
+        "name": "playlist_id",
+        "longname": "<anonymous>~parsedData.playlist_id",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4539,
+                4560
+            ],
+            "filename": "tv.js",
+            "lineno": 157,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000542",
+                "name": "language",
+                "type": "MemberExpression",
+                "value": "data.idioma"
+            }
+        },
+        "undocumented": true,
+        "name": "language",
+        "longname": "<anonymous>~parsedData.language",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4570,
+                4585
+            ],
+            "filename": "tv.js",
+            "lineno": 158,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000546",
+                "name": "name",
+                "type": "MemberExpression",
+                "value": "data.name"
+            }
+        },
+        "undocumented": true,
+        "name": "name",
+        "longname": "<anonymous>~parsedData.name",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4595,
+                4626
+            ],
+            "filename": "tv.js",
+            "lineno": 159,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000550",
+                "name": "description",
+                "type": "MemberExpression",
+                "value": "data.desc_playlist"
+            }
+        },
+        "undocumented": true,
+        "name": "description",
+        "longname": "<anonymous>~parsedData.description",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4636,
+                5788
+            ],
+            "filename": "tv.js",
+            "lineno": 160,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000554",
+                "name": "playlist",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "playlist",
+        "longname": "<anonymous>~parsedData.playlist",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4708,
+                4719
+            ],
+            "filename": "tv.js",
+            "lineno": 162,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000566",
+                "name": "id",
+                "type": "MemberExpression",
+                "value": "item.ID"
+            }
+        },
+        "undocumented": true,
+        "name": "id",
+        "longname": "id",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4733,
+                4766
+            ],
+            "filename": "tv.js",
+            "lineno": 163,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000570",
+                "name": "name",
+                "type": "MemberExpression",
+                "value": "item[undefined]"
+            }
+        },
+        "undocumented": true,
+        "name": "name",
+        "longname": "name",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4780,
+                4825
+            ],
+            "filename": "tv.js",
+            "lineno": 164,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000579",
+                "name": "chapter_title",
+                "type": "MemberExpression",
+                "value": "item[undefined]"
+            }
+        },
+        "undocumented": true,
+        "name": "chapter_title",
+        "longname": "chapter_title",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4839,
+                4867
+            ],
+            "filename": "tv.js",
+            "lineno": 165,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000588",
+                "name": "chapter_number",
+                "type": "MemberExpression",
+                "value": "item.chapter"
+            }
+        },
+        "undocumented": true,
+        "name": "chapter_number",
+        "longname": "chapter_number",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4881,
+                4902
+            ],
+            "filename": "tv.js",
+            "lineno": 166,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000592",
+                "name": "language",
+                "type": "MemberExpression",
+                "value": "item.IDIOMA"
+            }
+        },
+        "undocumented": true,
+        "name": "language",
+        "longname": "language",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4916,
+                4962
+            ],
+            "filename": "tv.js",
+            "lineno": 167,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000596",
+                "name": "description",
+                "type": "MemberExpression",
+                "value": "item[undefined]"
+            }
+        },
+        "undocumented": true,
+        "name": "description",
+        "longname": "description",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4976,
+                5013
+            ],
+            "filename": "tv.js",
+            "lineno": 168,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000605",
+                "name": "parental_rating",
+                "type": "MemberExpression",
+                "value": "item.PARENTAL_RATING"
+            }
+        },
+        "undocumented": true,
+        "name": "parental_rating",
+        "longname": "parental_rating",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5027,
+                5062
+            ],
+            "filename": "tv.js",
+            "lineno": 169,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000609",
+                "name": "channel",
+                "type": "MemberExpression",
+                "value": "item.LAST_BROADCST_CHANNEL"
+            }
+        },
+        "undocumented": true,
+        "name": "channel",
+        "longname": "channel",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5076,
+                5107
+            ],
+            "filename": "tv.js",
+            "lineno": 170,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000613",
+                "name": "publication_date",
+                "type": "MemberExpression",
+                "value": "item.PUB_DATE"
+            }
+        },
+        "undocumented": true,
+        "name": "publication_date",
+        "longname": "publication_date",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5121,
+                5154
+            ],
+            "filename": "tv.js",
+            "lineno": 171,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000617",
+                "name": "thumbnail_url",
+                "type": "MemberExpression",
+                "value": "item.THUMBNAIL_URL"
+            }
+        },
+        "undocumented": true,
+        "name": "thumbnail_url",
+        "longname": "thumbnail_url",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5168,
+                5197
+            ],
+            "filename": "tv.js",
+            "lineno": 172,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000621",
+                "name": "m3u8_streaming",
+                "type": "MemberExpression",
+                "value": "item.HLS_SURL"
+            }
+        },
+        "undocumented": true,
+        "name": "m3u8_streaming",
+        "longname": "m3u8_streaming",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5211,
+                5480
+            ],
+            "filename": "tv.js",
+            "lineno": 173,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000625",
+                "name": "videos",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "videos",
+        "longname": "videos",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5291,
+                5325
+            ],
+            "filename": "tv.js",
+            "lineno": 175,
+            "columnno": 16,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000637",
+                "name": "encoding_rate",
+                "type": "MemberExpression",
+                "value": "video.ENCODING_RATE"
+            }
+        },
+        "undocumented": true,
+        "name": "encoding_rate",
+        "longname": "encoding_rate",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5343,
+                5369
+            ],
+            "filename": "tv.js",
+            "lineno": 176,
+            "columnno": 16,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000641",
+                "name": "height",
+                "type": "MemberExpression",
+                "value": "video.FRAME_HEIGHT"
+            }
+        },
+        "undocumented": true,
+        "name": "height",
+        "longname": "height",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5387,
+                5411
+            ],
+            "filename": "tv.js",
+            "lineno": 177,
+            "columnno": 16,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000645",
+                "name": "width",
+                "type": "MemberExpression",
+                "value": "video.FRAME_WIDTH"
+            }
+        },
+        "undocumented": true,
+        "name": "width",
+        "longname": "width",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5429,
+                5447
+            ],
+            "filename": "tv.js",
+            "lineno": 178,
+            "columnno": 16,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000649",
+                "name": "url",
+                "type": "MemberExpression",
+                "value": "video.PMD_URL"
+            }
+        },
+        "undocumented": true,
+        "name": "url",
+        "longname": "url",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5494,
+                5763
+            ],
+            "filename": "tv.js",
+            "lineno": 181,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000653",
+                "name": "images",
+                "type": "ConditionalExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "images",
+        "longname": "images",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5887,
+                6584
+            ],
+            "filename": "tv.js",
+            "lineno": 200,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000670",
+                "name": "getTVPrograms",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getTVPrograms",
+        "longname": "getTVPrograms",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5983,
+                6040
+            ],
+            "filename": "tv.js",
+            "lineno": 203,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000684",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6054,
+                6503
+            ],
+            "filename": "tv.js",
+            "lineno": 204,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000696",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"programs\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6077,
+                6092
+            ],
+            "filename": "tv.js",
+            "lineno": 205,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000699",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.num"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6102,
+                6127
+            ],
+            "filename": "tv.js",
+            "lineno": 206,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000703",
+                "name": "timestamp",
+                "type": "MemberExpression",
+                "value": "data.timestamp"
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6137,
+                6494
+            ],
+            "filename": "tv.js",
+            "lineno": 207,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000707",
+                "name": "programs",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "programs",
+        "longname": "<anonymous>~parsedData.programs",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6209,
+                6230
+            ],
+            "filename": "tv.js",
+            "lineno": 209,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000719",
+                "name": "id",
+                "type": "MemberExpression",
+                "value": "item.ID_WEB_GROUP"
+            }
+        },
+        "undocumented": true,
+        "name": "id",
+        "longname": "id",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6244,
+                6267
+            ],
+            "filename": "tv.js",
+            "lineno": 210,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000723",
+                "name": "name",
+                "type": "MemberExpression",
+                "value": "item.NOMBRE_GROUP"
+            }
+        },
+        "undocumented": true,
+        "name": "name",
+        "longname": "name",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6281,
+                6298
+            ],
+            "filename": "tv.js",
+            "lineno": 211,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000727",
+                "name": "order",
+                "type": "MemberExpression",
+                "value": "item.ORDEN"
+            }
+        },
+        "undocumented": true,
+        "name": "order",
+        "longname": "order",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6312,
+                6340
+            ],
+            "filename": "tv.js",
+            "lineno": 212,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000731",
+                "name": "description",
+                "type": "MemberExpression",
+                "value": "item.SHORT_DESC"
+            }
+        },
+        "undocumented": true,
+        "name": "description",
+        "longname": "description",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6354,
+                6469
+            ],
+            "filename": "tv.js",
+            "lineno": 213,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000735",
+                "name": "images",
+                "type": "ConditionalExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "images",
+        "longname": "images",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6598,
+                6613
+            ],
+            "filename": "tv.js",
+            "lineno": 227,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000752",
+                "name": "exports.getTVCategories",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getTVCategories",
+        "longname": "getTVCategories",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6617,
+                6630
+            ],
+            "filename": "tv.js",
+            "lineno": 228,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000755",
+                "name": "exports.getTVCategory",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getTVCategory",
+        "longname": "getTVCategory",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6634,
+                6655
+            ],
+            "filename": "tv.js",
+            "lineno": 229,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000758",
+                "name": "exports.getTVCategoryPrograms",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getTVCategoryPrograms",
+        "longname": "getTVCategoryPrograms",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6659,
+                6687
+            ],
+            "filename": "tv.js",
+            "lineno": 230,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000761",
+                "name": "exports.getTVCategoryProgramPlaylist",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getTVCategoryProgramPlaylist",
+        "longname": "getTVCategoryProgramPlaylist",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6691,
+                6726
+            ],
+            "filename": "tv.js",
+            "lineno": 231,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000764",
+                "name": "exports.getTVCategoryProgramPlaylistChapter",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getTVCategoryProgramPlaylistChapter",
+        "longname": "getTVCategoryProgramPlaylistChapter",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6730,
+                6743
+            ],
+            "filename": "tv.js",
+            "lineno": 232,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000767",
+                "name": "exports.getTVPrograms",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getTVPrograms",
+        "longname": "getTVPrograms",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "kind": "package",
+        "longname": "package:undefined",
+        "files": [
+            "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src/tv.js"
+        ]
+    }
+]

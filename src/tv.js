@@ -10,6 +10,11 @@ import {
 import { fetchAPI } from './helpers/fetch.js';
 import { parseImage } from './helpers/parsers.js';
 
+/**
+ * Get TV Categories
+ * @function
+ * @param {string} category_id=789798 - The number of the category.
+ */
 const getTVCategories = () => {
   return new Promise(async (resolve, reject) => {
     try {

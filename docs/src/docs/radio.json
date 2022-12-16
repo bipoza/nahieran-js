@@ -1,0 +1,1045 @@
+[
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                282,
+                624
+            ],
+            "filename": "radio.js",
+            "lineno": 12,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000025",
+                "name": "getRadios",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getRadios",
+        "longname": "getRadios",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                374,
+                543
+            ],
+            "filename": "radio.js",
+            "lineno": 15,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000039",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"radios\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                397,
+                417
+            ],
+            "filename": "radio.js",
+            "lineno": 16,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000042",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "RADIOS.length"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                427,
+                460
+            ],
+            "filename": "radio.js",
+            "lineno": 17,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000046",
+                "name": "timestamp",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                470,
+                534
+            ],
+            "filename": "radio.js",
+            "lineno": 18,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000049",
+                "name": "radios",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "radios",
+        "longname": "<anonymous>~parsedData.radios",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                633,
+                1047
+            ],
+            "filename": "radio.js",
+            "lineno": 29,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000069",
+                "name": "getRadioPrograms",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioPrograms",
+        "longname": "getRadioPrograms",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                740,
+                795
+            ],
+            "filename": "radio.js",
+            "lineno": 32,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000084",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                810,
+                966
+            ],
+            "filename": "radio.js",
+            "lineno": 34,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000096",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"programs\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                833,
+                848
+            ],
+            "filename": "radio.js",
+            "lineno": 35,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000099",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.num"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                858,
+                883
+            ],
+            "filename": "radio.js",
+            "lineno": 36,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000103",
+                "name": "timestamp",
+                "type": "MemberExpression",
+                "value": "data.timestamp"
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                893,
+                957
+            ],
+            "filename": "radio.js",
+            "lineno": 37,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000107",
+                "name": "programs",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "programs",
+        "longname": "<anonymous>~parsedData.programs",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1056,
+                1608
+            ],
+            "filename": "radio.js",
+            "lineno": 48,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000127",
+                "name": "getRadioProgramData",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioProgramData",
+        "longname": "getRadioProgramData",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1168,
+                1224
+            ],
+            "filename": "radio.js",
+            "lineno": 51,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000142",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1239,
+                1527
+            ],
+            "filename": "radio.js",
+            "lineno": 53,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000154",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":1,\"timestamp\":\"\",\"data\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1262,
+                1270
+            ],
+            "filename": "radio.js",
+            "lineno": 54,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000157",
+                "name": "count",
+                "type": "Literal",
+                "value": 1
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1280,
+                1313
+            ],
+            "filename": "radio.js",
+            "lineno": 55,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000159",
+                "name": "timestamp",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1323,
+                1518
+            ],
+            "filename": "radio.js",
+            "lineno": 56,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000162",
+                "name": "data",
+                "type": "ObjectExpression",
+                "value": "{\"seasons\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~parsedData.data",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1360,
+                1507
+            ],
+            "filename": "radio.js",
+            "lineno": 58,
+            "columnno": 10,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000166",
+                "name": "seasons",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "seasons",
+        "longname": "<anonymous>~parsedData.data.seasons",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData.data",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1617,
+                2058
+            ],
+            "filename": "radio.js",
+            "lineno": 72,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000189",
+                "name": "getRadioProgramSeasons",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioProgramSeasons",
+        "longname": "getRadioProgramSeasons",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1732,
+                1796
+            ],
+            "filename": "radio.js",
+            "lineno": 75,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000204",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1811,
+                1977
+            ],
+            "filename": "radio.js",
+            "lineno": 77,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000216",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"seasons\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1834,
+                1852
+            ],
+            "filename": "radio.js",
+            "lineno": 78,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000219",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.length"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1862,
+                1895
+            ],
+            "filename": "radio.js",
+            "lineno": 79,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000223",
+                "name": "timestamp",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1905,
+                1968
+            ],
+            "filename": "radio.js",
+            "lineno": 80,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000226",
+                "name": "seasons",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "seasons",
+        "longname": "<anonymous>~parsedData.seasons",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2067,
+                2530
+            ],
+            "filename": "radio.js",
+            "lineno": 91,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000246",
+                "name": "getRadioProgramSeason",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioProgramSeason",
+        "longname": "getRadioProgramSeason",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2180,
+                2268
+            ],
+            "filename": "radio.js",
+            "lineno": 94,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000261",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2282,
+                2449
+            ],
+            "filename": "radio.js",
+            "lineno": 97,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000273",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\",\"chapters\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2305,
+                2323
+            ],
+            "filename": "radio.js",
+            "lineno": 98,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000276",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.length"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2333,
+                2366
+            ],
+            "filename": "radio.js",
+            "lineno": 99,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000280",
+                "name": "timestamp",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2376,
+                2440
+            ],
+            "filename": "radio.js",
+            "lineno": 100,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000283",
+                "name": "chapters",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "chapters",
+        "longname": "<anonymous>~parsedData.chapters",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2539,
+                2953
+            ],
+            "filename": "radio.js",
+            "lineno": 111,
+            "columnno": 6,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000303",
+                "name": "getRadioProgramSeasonChapter",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioProgramSeasonChapter",
+        "longname": "getRadioProgramSeasonChapter",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2660,
+                2748
+            ],
+            "filename": "radio.js",
+            "lineno": 114,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000318",
+                "name": "data",
+                "type": "AwaitExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "<anonymous>~data",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2762,
+                2872
+            ],
+            "filename": "radio.js",
+            "lineno": 117,
+            "columnno": 12,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000330",
+                "name": "parsedData",
+                "type": "ObjectExpression",
+                "value": "{\"count\":\"\",\"timestamp\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "parsedData",
+        "longname": "<anonymous>~parsedData",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2785,
+                2803
+            ],
+            "filename": "radio.js",
+            "lineno": 118,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000333",
+                "name": "count",
+                "type": "MemberExpression",
+                "value": "data.length"
+            }
+        },
+        "undocumented": true,
+        "name": "count",
+        "longname": "<anonymous>~parsedData.count",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2813,
+                2846
+            ],
+            "filename": "radio.js",
+            "lineno": 119,
+            "columnno": 8,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000337",
+                "name": "timestamp",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "timestamp",
+        "longname": "<anonymous>~parsedData.timestamp",
+        "kind": "member",
+        "memberof": "<anonymous>~parsedData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2967,
+                2976
+            ],
+            "filename": "radio.js",
+            "lineno": 130,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000352",
+                "name": "exports.getRadios",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getRadios",
+        "longname": "getRadios",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2980,
+                2996
+            ],
+            "filename": "radio.js",
+            "lineno": 131,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000355",
+                "name": "exports.getRadioPrograms",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioPrograms",
+        "longname": "getRadioPrograms",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3000,
+                3019
+            ],
+            "filename": "radio.js",
+            "lineno": 132,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000358",
+                "name": "exports.getRadioProgramData",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioProgramData",
+        "longname": "getRadioProgramData",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3023,
+                3045
+            ],
+            "filename": "radio.js",
+            "lineno": 133,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000361",
+                "name": "exports.getRadioProgramSeasons",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioProgramSeasons",
+        "longname": "getRadioProgramSeasons",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3049,
+                3070
+            ],
+            "filename": "radio.js",
+            "lineno": 134,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000364",
+                "name": "exports.getRadioProgramSeason",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioProgramSeason",
+        "longname": "getRadioProgramSeason",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3074,
+                3102
+            ],
+            "filename": "radio.js",
+            "lineno": 135,
+            "columnno": 2,
+            "path": "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src",
+            "code": {
+                "id": "astnode100000367",
+                "name": "exports.getRadioProgramSeasonChapter",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "getRadioProgramSeasonChapter",
+        "longname": "getRadioProgramSeasonChapter",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "kind": "package",
+        "longname": "package:undefined",
+        "files": [
+            "/home/bipoza/Dokumentuak/garapena/js/nahieran-js/src/radio.js"
+        ]
+    }
+]

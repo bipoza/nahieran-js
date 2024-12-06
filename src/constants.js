@@ -38,3 +38,8 @@ export const RADIO_PROGRAM_SEASONS = `${RADIO_API_PATH}/getSeasons`;
 export const RADIO_PROGRAM_SEASON = `${RADIO_API_PATH}/getSeasonData`;
 export const RADIO_PROGRAM_SEASON_CHAPTERS = `${RADIO_API_PATH}/getChapters`;
 export const RADIO_PROGRAM_SEASON_CHAPTER = `${RADIO_API_PATH}/getChapterData`;
+
+export const JS_HEADERS = new Headers({
+  'User-Agent':
+    'Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0',
+});

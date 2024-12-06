@@ -1,4 +1,4 @@
-import { JS_HEADERS } from '../constants';
+import { JS_HEADERS } from '../constants.js';
 const fetchAPI = (url) => {
   return new Promise((resolve, reject) => {
     fetch(url, { headers: JS_HEADERS })
